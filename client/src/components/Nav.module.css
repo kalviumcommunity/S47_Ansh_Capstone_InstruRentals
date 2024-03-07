@@ -1,0 +1,46 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.main{
+}
+.container{
+    display: flex;
+    height: 6vh;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4vh;
+    margin-right: 4vh;
+}
+
+.logo img{
+    height: 6vh;
+}
+
+.links{
+    width: 30vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a{
+    color: black;
+}
+  
+.navs{
+    display: flex;
+    width: 30vh;
+    justify-content: space-between;
+    
+}
+.buttons{
+    display: flex;
+    width: 20vh;
+    justify-content: space-between;
+}
+.buttons button{
+    padding: 1vh;
+    border:  transparent;
+    border-radius: 0.5vh;
+}
