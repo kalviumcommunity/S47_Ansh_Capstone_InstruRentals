@@ -1,0 +1,133 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.main{
+    background-image: linear-gradient(180deg,rgba(0,0,0),rgba(0,0,0),rgba(0,0,0),rgba(0,0,0),rgba(0,0,0),rgba(0,0,0),rgba(0,0,0),rgba(0,0,0),rgba(0,0,0),rgba(11,11,11),rgba(16,16,16),rgba(25,25,25),rgba(27,27,27),rgba(35,35,35));
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.container1{
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+}
+
+.left img{
+    height: 378px;
+}
+.left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.right{
+    color: white;
+    width: 50%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+}
+.heading{
+    font-size: 9vh;
+}
+
+.start button{
+    padding: 1vh;
+    font-size: 2vh;
+    width: 40vh;
+    background-color: rgba(217, 217, 217, 70%);
+    margin-top: 2vh;
+    border-radius: 0.7vh;
+    border:2px solid transparent;
+}
+
+.start hr{
+    width: 0vh;
+    visibility: hidden;
+    margin-top: 1vh;
+    transition: 0.4s;
+}
+
+.start button:hover + hr {
+    width: 40vh;
+    transition: width 0.4s ease-in; /* Apply the transition only to width */
+    visibility: visible;
+}
+
+
+.start button:hover{
+    background-color: whitesmoke;
+    transition: 0.3s;
+}
+
+.container2{
+    background-image: url('../../public/piano.jpg');
+    background-image: linear-gradient(0deg, black);
+    background-size: 100% 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.container2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)); 
+    mix-blend-mode: overlay; 
+  }
+  .content {
+    position: absolute;
+    top: 40%; /* Position content in the middle vertically */
+    left: 50%; /* Position content in the middle horizontally */
+    transform: translate(-50%, -50%); /* Center content */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    z-index: 1; /* Ensure content is above the gradient overlay */
+  }
+
+
+.circles{
+    z-index: 2;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 120vh;
+}
+
+.circle{
+    height: 15vh;
+    width: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #19AEA4;
+}
+
+.outerBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2vh;
+    height: 50vh;
+}
+
+.text{
+    width: 23vh;
+    margin-top: 5vh;
+}
+.text p{
+    color: white;
+    font-size: 2vh;
+}
+  
