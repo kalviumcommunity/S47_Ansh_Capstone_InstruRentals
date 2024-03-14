@@ -1,6 +1,7 @@
 import React from "react";
 import NavigationBar from "./NavigationBar";
 import styles from "./landing.module.css";
+import Footer from "./Footer";
 
 const LandingPage = () => {
 
@@ -9,6 +10,8 @@ const LandingPage = () => {
   return (
     <div className={styles.main}>
       <NavigationBar />
+
+      {/* Container-1 */}
 
       <div className={styles.container1}>
         <div className={styles.left}>
@@ -30,13 +33,13 @@ const LandingPage = () => {
         </div>
       </div>
 
-
       <hr />
 
+    {/* Container-2 */}
 
       <div className={styles.container2}>
         <div className={styles.content}>
-            <div>
+            <div className={styles.services}>
               Our Services
             </div>
             <div className={styles.circles}>
@@ -69,6 +72,8 @@ const LandingPage = () => {
       </div>
 
       <hr />
+
+      {/* Container-3 */}
 
       <div className={styles.container3}>
         <div className={styles.oute}>
@@ -131,6 +136,9 @@ const LandingPage = () => {
 
       <hr />
 
+
+      {/* Container-4 */}
+
       <div className={styles.container4a}>
         <div className={styles.he}>
           Our Customers
@@ -170,6 +178,8 @@ const LandingPage = () => {
       <hr />
 
 
+    {/* Container-5 */}
+
       <div className={styles.container5}>
         <div className={styles.rent}>
           <div className={styles.renthead}>
@@ -207,60 +217,7 @@ const LandingPage = () => {
 
       <hr />
 
-      <div className={styles.container6}>
-        <div className={styles.footerUp}>
-          <div className={styles.leftFooter}>
-            <div className={styles.company} >
-              InstruRentals
-            </div>
-            <div className={styles.l}>
-              Customer Care
-            </div>
-            <div className={styles.l}>
-              About Us
-            </div>
-            <div className={styles.l}>
-              Privacy Policy
-            </div>
-            <div className={styles.links}>
-              <div><img src="../../public/facebook.png" alt="" /></div>
-              <div><img src="../../public/instagram.png" alt="" /></div>
-              <div><img src="../../public/twitter.png" alt="" /></div>
-              <div><img src="../../public/youtube.png" alt="" /></div>
-              <div><img src="../../public/pinterest.png" alt="" /></div>
-            </div>
-          </div>
-          <div className={styles.rightFooter}>
-            <div>
-              Get latest updates on the go. <br />
-              <span className={styles.blue}>Subscribe to our newsletter</span>. <br />
-              <div className={styles.newsletter}>
-                <input type="text" placeholder="Email" />
-                <button>Subscribe</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <hr />
-
-        <div className={styles.footerDown}>
-          <div className={styles.li}>
-            <div className={styles.f}>
-              Website Terms
-            </div>
-            <div className={styles.f}>
-              Privacy Policy
-            </div>
-            <div className={styles.f}>
-              Accessibility Statement
-            </div>
-          </div>
-          <div className={styles.copyright}>
-            @2022 InstruRentals, LLC. All Rights Reserved
-          </div>
-        </div>
-      </div>
+    <Footer></Footer>     
 
     </div> 
 
