@@ -1,6 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    font-family: "Heebo", sans-serif;
 }
 
 .main{
@@ -9,8 +10,13 @@
     background-repeat: no-repeat;
 }
 
+
+/* Container 1 */
 .container1{
     display: flex;
+    background-image: linear-gradient(180deg,rgba(0,0,0),rgba(0,0,0),rgba(0,0,0),rgba(0,0,0),rgba(0,0,0),rgba(0,0,0),rgba(0,0,0),rgba(0,0,0),rgba(0,0,0),rgba(11,11,11),rgba(16,16,16),rgba(25,25,25),rgba(27,27,27),rgba(35,35,35));
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     height: 95vh;
     justify-content: center;
 }
@@ -67,6 +73,11 @@
     transition: 0.3s;
 }
 
+
+.arrow{
+    height: 5vh;
+}
+/* Container 2 */
 .container2{
     background-image: url('../../public/piano.jpg');
     background-image: linear-gradient(0deg, black);
@@ -84,7 +95,12 @@
     height: 100%;
     background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)); 
     mix-blend-mode: overlay; 
-  }
+}
+
+.services{
+    font-size: 6vh;
+    text-decoration: 1px solid underline;
+}
   .content {
     position: absolute;
     top: 40%; /* Position content in the middle vertically */
@@ -112,6 +128,7 @@
     align-items: center;
     border-radius: 50%;
     background-color: #19AEA4;
+    margin-top: 2vh;
 }
 
 .outerBox{
@@ -131,3 +148,187 @@
     font-size: 2vh;
 }
   
+
+
+.container3{
+    background-image: url('../../public/k.jpg');
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+.oute{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    height: 80vh;
+    padding-top: 10vh;
+}
+
+.p{
+    font-size: 6vh;
+    color: white;
+    padding-top: 4vh;
+}
+
+.eu{
+    display: grid;
+    grid-template-columns: repeat(3,45vh);
+    grid-template-rows: repeat(2,30vh);
+    grid-row-gap: 3vh;
+    padding-left: 10vh;
+}
+
+.equip:nth-child(odd){
+    background-color: rgba(25, 174, 164, 0.5);
+    color: white;
+}
+.equip:nth-child(even){
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.equip{
+    height: 28vh;
+    width: 28vh;
+    border-radius: 0.6vh;
+    font-size: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+}
+
+.equip img{
+    height: 20vh;
+    width: 20vh;
+}
+
+
+
+.container4a{
+    height: 50vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.he{
+    font-size: 5vh;
+}
+
+.review{
+    display: flex;
+    width: 100vh;
+    justify-content: space-between;
+
+}
+.custImage img{
+    height:35vh;
+}
+
+.custDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10vh;
+}
+.custName{
+    font-size: 4vh;
+}
+.custReview{
+    font-size: 2.5vh;
+}
+.seemore{
+    font-size: 2vh;
+    text-decoration: 1px underline;
+    color: #19AEA4;
+}
+.container4b{
+    height: 50vh;
+    background-image: url('../../public/m.jpg');
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.k{
+    display: flex;
+    justify-content: space-between;
+    width: 150vh;
+}
+.more{
+    height: 30vh;
+    width: 30vh;
+    border-radius: 0.5vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+
+
+
+.container5{
+    height: 100vh;
+    background-color: white;
+}
+.renthead{
+    font-size: 5vh;
+    padding-top: 2vh;
+}
+
+.rent{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    height: 100%;
+}
+.sub{
+    text-align: center;
+    font-size: 4vh;
+    padding-top: 3vh;
+}
+
+.form{
+    padding-top: 4vh;
+}
+
+.form label{
+    font-size: 2vh;
+}
+.form input{
+    border: 1px solid #020202;
+    width: 40vh;
+    height: 5vh;
+    border-radius: 0.5vh;
+    margin-bottom: 2vh;
+    padding-left: 1vh;
+}
+.form textarea{
+    padding: 1vh;
+    border: 1px solid #020202;
+
+}
+
+.form button{
+    margin-top: 2vh;
+    width: 42vh;
+    font-size: 2vh;
+    background-color: black;
+    color: white;
+    padding: 1vh;
+    border-radius: 0.5vh;
+    border: 2px solid transparent;
+}
+
+
