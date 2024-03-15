@@ -1,0 +1,161 @@
+[{
+    "categories": {
+      "instruments": {
+        "string": [
+          {
+            "name": "Guitar",
+            "type": "Acoustic",
+            "imageLink": "",
+            "productId": "guitar001"
+          },
+          {
+            "name": "Electric Guitar",
+            "type": "Electric",
+            "imageLink": "",
+            "productId": "electricGuitar001"
+          },
+          {
+            "name": "Violin",
+            "type": "Bowed",
+            "imageLink": "",
+            "productId": "violin001"
+          },
+          {
+            "name": "Cello",
+            "type": "Bowed",
+            "imageLink": "",
+            "productId": "cello001"
+          }
+        ],
+        "wind": [
+          {
+            "name": "Flute",
+            "type": "Woodwind",
+            "imageLink": "",
+            "productId": "flute001"
+          },
+          {
+            "name": "Trumpet",
+            "type": "Brass",
+            "imageLink": "",
+            "productId": "trumpet001"
+          },
+          {
+            "name": "Saxophone",
+            "type": "Woodwind",
+            "imageLink": "",
+            "productId": "saxophone001"
+          },
+          {
+            "name": "Clarinet",
+            "type": "Woodwind",
+            "imageLink": "",
+            "productId": "clarinet001"
+          }
+        ],
+        "percussion": [
+          {
+            "name": "Drum Kit",
+            "type": "Membrane",
+            "imageLink": "",
+            "productId": "drumKit001"
+          },
+          {
+            "name": "Xylophone",
+            "type": "Tuned Percussion",
+            "imageLink": "",
+            "productId": "xylophone001"
+          },
+          {
+            "name": "Conga",
+            "type": "Membrane",
+            "imageLink": "",
+            "productId": "conga001"
+          },
+          {
+            "name": "Tambourine",
+            "type": "Shaken",
+            "imageLink": "",
+            "productId": "tambourine001"
+          }
+        ],
+        "keyboard": [
+          {
+            "name": "Piano",
+            "type": "Acoustic",
+            "imageLink": "",
+            "productId": "piano001"
+          },
+          {
+            "name": "Keyboard",
+            "type": "Electric",
+            "imageLink": "",
+            "productId": "keyboard001"
+          },
+          {
+            "name": "Organ",
+            "type": "Electronic",
+            "imageLink": "",
+            "productId": "organ001"
+          },
+          {
+            "name": "Synthesizer",
+            "type": "Electronic",
+            "imageLink": "",
+            "productId": "synthesizer001"
+          }
+        ]
+      },
+      "equipment": {
+        "speakers": [
+          {
+            "name": "Monitor Speaker",
+            "type": "Studio Monitor",
+            "imageLink": "",
+            "productId": "monitorSpeaker001"
+          },
+          {
+            "name": "PA Speaker",
+            "type": "Public Address",
+            "imageLink": "",
+            "productId": "paSpeaker001"
+          }
+        ],
+        "amplifiers": [
+          {
+            "name": "Guitar Amplifier",
+            "type": "Combo Amp",
+            "imageLink": "",
+            "productId": "guitarAmp001"
+          },
+          {
+            "name": "Bass Amplifier",
+            "type": "Head Amp",
+            "imageLink": "",
+            "productId": "bassAmp001"
+          }
+        ],
+        "mics": [
+          {
+            "name": "Dynamic Microphone",
+            "type": "Dynamic",
+            "imageLink": "",
+            "productId": "dynamicMic001"
+          },
+          {
+            "name": "Condenser Microphone",
+            "type": "Condenser",
+            "imageLink": "",
+            "productId": "condenserMic001"
+          },
+          {
+            "name": "Wireless Microphone",
+            "type": "Wireless",
+            "imageLink": "",
+            "productId": "wirelessMic001"
+          }
+        ]
+      }
+    }
+  }
+]  

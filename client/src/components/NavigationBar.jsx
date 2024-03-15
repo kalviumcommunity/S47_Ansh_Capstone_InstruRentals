@@ -7,7 +7,8 @@ const NavigationBar = () => {
     <div className={styles.main}>
         <div className={styles.container}>
             <div className={styles.navs}>
-                <div className={styles.l}>Home</div>
+                <div className={styles.l}>Home
+                </div>
                 <div className={styles.l}>Client</div>
                 <div className={styles.l}>Studios</div>
             </div>
