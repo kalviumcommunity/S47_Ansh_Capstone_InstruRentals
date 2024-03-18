@@ -1,9 +1,108 @@
-.main{
+.main {
+    font-family: "Poppins", sans-serif;
 }
 
-.container1{
+.container1 {
     background-image: url('../../../public/shop-back3.jpg');
-    height: 300vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+}
+
+.product img {
+    height: 338px;
+    width: 600px;
+    border-radius: 3vh;
+    border: 1px solid white;
+}
+
+.product:nth-child(even) {
+    display: flex;
+}
+
+.product:nth-child(odd) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.sele {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4vh;
+    width: 60vh;
+    font-size: 3vh;
+    padding: 3vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 1vh;
+    margin-bottom: 3vh;
+    margin-top: 5vh;
+}
+
+select {
+    padding: 1vh;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    height: 4.5vh;
+    border-radius: 0.5vh;
+}
+
+option {
+    background-color: transparent;
+}
+
+.nothing {
+    height: 30vh;
+    color: white;
+    font-size: 5vh;
+    margin-left: 4vh;
+    margin-top: 4vh;
+}
+
+.select {
+    color: white;
+}
+
+.itemName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 51.150895140664964vh;
+    height: 51.150895140664964vh;
+    border: 1px solid white;
+    border-radius: 3vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.product {
+    justify-content: space-around;
+    align-items: center;
+    padding: 4vh;
+    margin-bottom: 2vh;
+}
+
+.products {
+    color: white;
+    max-height: 400px; /* Set the maximum height of the products container */
+    overflow-y: auto; /* Add scrollbar when content exceeds the maximum height */
+}
+
+.buttons button {
+    padding: 1vh;
+    width: 15vh;
+    background-color: transparent;
+}
+
+.white button {
+    background-color: white;
+}
+
+.buttons {
+    width: 35vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
 }
