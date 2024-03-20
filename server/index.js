@@ -1,33 +1,31 @@
-const express = require("express");
-const cors = require("cors");
-const mongoose = require("mongoose");
+import express from 'express'
+import cors from 'cors';
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
 const app = express();
-const PORT = process.env.PORT || 8058;
-require("dotenv").config();
-const UserModel = require("./models/User");
-
+const PORT = process.env.PORT || 3000;
+import userRoutes from './routes/user.route.js'
+import authRoutes from './routes/auth.route.js'
+dotenv.config()
 app.use(express.json());
 app.use(cors());
 
 const uri = process.env.URI;
 
-mongoose.connect(uri).then(() => {
-  console.log("Connected to Mongodb");
-  app.get("/", (req, res) => {
-    UserModel.find({}).then((users) => res.json(users));
-  });
-
-  app.post("/createUser", (req, res) => {
-    let { username, email, password } = req.body;
-    UserModel.create({ username, email, password })
-      .then((user) => res.json(user))
-      .catch((err) => res.json(err));
-  });
-});
-
-app.listen("8058", (err) => {
-  if (err) {
+mongoose
+  .connect(uri)
+  .then(()=>{
+    console.log("Connected to MongoDB");
+  })
+  .catch((err)=>{
     console.log(err);
-  }
-});
+  })
 
+app.listen(3000,()=>{
+  console.log("Server is listening on port 3000.");
+})
+
+
+app.use("/api/user", userRoutes);
+
+app.use("/api/auth",authRoutes);

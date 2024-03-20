@@ -1,12 +1,10 @@
-const mongoose = require("mongoose")
-const jwt = require("jsonwebtoken")
+import mongoose from 'mongoose';
 
 const userSchema = new mongoose.Schema({
     username:{
         type : String,
         required : true,
-        minlenght : [5, "Username must be atleast 5 characters"],
-        maxlenght : 20,
+        unique : true
     },
     email :{
         type : String,
@@ -18,7 +16,9 @@ const userSchema = new mongoose.Schema({
         required : true,
         min : [6, "Password must be at least 6 characters."]
     },
-})
+},{timestamps:true})
 
-const UserModel = mongoose.model("users",userSchema);
-module.exports = UserModel;
+const UserModel = mongoose.model("User",userSchema);
+
+
+export default UserModel;

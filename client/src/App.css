@@ -10,6 +10,7 @@
 /* Handle (the draggable part of the scrollbar) */
 ::-webkit-scrollbar-thumb {
     background-color: #19AEA4; /* Color of the handle */
+    border-radius: 10px;
      /* Rounded corners for the handle */
 }
 
