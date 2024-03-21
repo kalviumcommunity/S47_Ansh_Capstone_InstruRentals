@@ -1,4 +1,5 @@
-const User = require("../models/User");
-require('dotenv').config();
-
-//handling signup
+export const test = (req,res) =>{
+    res.json({
+        message : "api is working",
+    });
+}

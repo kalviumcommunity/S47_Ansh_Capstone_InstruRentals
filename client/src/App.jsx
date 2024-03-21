@@ -3,6 +3,7 @@ import './App.css'
 import LandingPage from './components/LandingPage'
 import NavigationBar from './components/NavigationBar';
 import Shop from './components/rentals/Shop';
+import Signup from './components/auth/Signup';
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
     <>
       {/* <LandingPage></LandingPage> */}
       {/* <Login></Login> */}
-      <Shop></Shop>
+      <Signup></Signup>
     </>
   )
 }
