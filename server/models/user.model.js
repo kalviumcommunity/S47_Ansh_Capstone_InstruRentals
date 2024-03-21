@@ -1,24 +1,27 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
-    username:{
+    username : {
         type : String,
         required : true,
         unique : true
     },
-    email :{
-        type : String,
-        required : [true, "Email is required"],
-        unique : [true, "Email already exists"],
-    },
-    password:{
+    email : {
         type : String,
         required : true,
-        min : [6, "Password must be at least 6 characters."]
+        unique : true
     },
-},{timestamps:true})
+    password : {
+        type : String,
+        required : true,
+    },
+    profilePicture:{
+        type:String,
+        default:"https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D",
+    }
+}, {timestamps:true});
 
-const UserModel = mongoose.model("User",userSchema);
+const User = mongoose.model("User",userSchema);
 
+export default User;
 
-export default UserModel;
