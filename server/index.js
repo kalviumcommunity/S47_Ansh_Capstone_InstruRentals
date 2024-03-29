@@ -1,4 +1,5 @@
 import express from 'express'
+import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
@@ -25,7 +26,19 @@ app.listen(3000,()=>{
   console.log("Server is listening on port 3000.");
 })
 
+app.use(cookieParser());
 
 app.use("/api/user", userRoutes);
 
 app.use("/api/auth",authRoutes);
+
+
+app.use((err, req, res, next) => {
+  const statusCode = err.statusCode || 500;
+  const message = err.message || 'Internal Server Error';
+  return res.status(statusCode).json({
+    success: false,
+    message,
+    statusCode,
+  });
+});

@@ -1,38 +1,77 @@
-import React from 'react'
-import styles from './signup.module.css'
-import NavigationBar from '../NavigationBar'
-import { Link } from 'react-router-dom'
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import OAuth from './OAuth';
 
-const Signup = () => {
+export default function SignUp() {
+  const [formData, setFormData] = useState({});
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.id]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      setLoading(true);
+      setError(false);
+      const res = await fetch('http://localhost:3000//api/auth/signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json();
+      console.log(data);
+      setLoading(false);
+      if (data.success === false) {
+        setError(true);
+        return;
+      }
+      navigate('/signin');
+    } catch (error) {
+      setLoading(false);
+      setError(true);
+    }
+  };
   return (
-    <div className={styles.main}>
-      <form className={styles.form}>
+    <div>
+      <h1>Sign Up</h1>
+      <form onSubmit={handleSubmit}>
         <input
-          type="text"
+          type='text'
           placeholder='Username'
-          required
-          name='username' />
+          id='username'
+          onChange={handleChange}
+        />
         <input
-          type="email"
+          type='email'
           placeholder='Email'
-          required
-          name='email' />
+          id='email'
+          onChange={handleChange}
+        />
         <input
-          type="password"
+          type='password'
           placeholder='Password'
-          required
-          name='password' />
-        <button>
-          Sign Up
+          id='password'
+          onChange={handleChange}
+        />
+        <button
+          disabled={loading}
+        >
+          {loading ? 'Loading...' : 'Sign Up'}
         </button>
+        <OAuth />
       </form>
-
       <div>
         <p>Have an account?</p>
-        <Link><span>Sign In</span></Link>
+        <Link to='/signin'>
+          <span>Sign in</span>
+        </Link>
       </div>
+      <p >{error && 'Something went wrong!'}</p>
     </div>
-  )
+  );
 }
-
-export default Signup
