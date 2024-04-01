@@ -1,0 +1,84 @@
+.main{
+    display: flex;
+}
+.left{
+    width: 50%;
+}
+.left img{
+    width: 100%;
+    height: 100vh;
+}
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding-top: 15vh;
+}
+.signin{
+    font-size: 6vh;
+}
+.form{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+}
+.form input{
+    margin-top: 2vh;
+    height: 5vh;
+    border: 2px solid rgba(255, 255, 255, 0.245);
+    border-radius: 0.4vh;
+    padding-left: 1.4vh;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+.form input:focus{
+    border: 2px solid white;
+}
+.form input::placeholder{
+    color: rgba(153, 205, 50, 0.8);
+}
+
+.form button{
+    margin-top: 2vh;
+    height: 5vh;
+    border: 2px solid transparent;
+    border-radius: 0.4vh;
+    cursor: pointer;
+}
+.ac{
+    margin-top: 2vh;
+    width: 50vh;
+}
+.errorMessage{
+    margin-top: 3vh;
+    color: red;
+}
+
+.googleButton{
+    background-color: rgb(55, 164, 55);
+    font-size: 2.1vh;
+    transition: 0.2s;
+}
+.googleButton:hover{
+    background-color: rgb(25, 160, 25);
+    transition: 0.2s;
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+.signinButton{
+    background-color: yellowgreen;
+    font-size: 2.1vh;
+    transition: 0.2s;
+
+}
+.signinButton:hover{
+    background-color: rgba(144, 205, 23, 0.784);
+    transition: 0.2s;
+}

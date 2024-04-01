@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux'
 import { signInSuccess } from '../../redux/user/userSlice.js'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import styles from '../authStyles/signin.module.css'
 
 const OAuth = () => {
 
@@ -31,14 +32,14 @@ const OAuth = () => {
                 email : result.user.email
             })
             dispatch(signInSuccess(data));
-            navigate('/signin')
+            navigate('/profile')
         }catch(error){
             console.error("Could not login with google",error);
         }
     }
 
   return (
-    <button type='button' onClick={handleGoogleClick} >
+    <button type='button' onClick={handleGoogleClick} className={styles.googleButton}>
         Continue with google
     </button>
 
