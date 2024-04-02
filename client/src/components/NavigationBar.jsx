@@ -14,10 +14,14 @@ const NavigationBar = () => {
             </div>
             <div className={styles.buttons}>
                 <div className={styles.login}>
-                    <button>LogIn</button>
+                    <Link to='/signin'>
+                        <button>LogIn</button>
+                    </Link>
                 </div>
                 <div className={styles.signup}>
-                    <button>SignUp</button>
+                    <Link to='/signup'>
+                        <button>SignUp</button>
+                    </Link>
                 </div>
             </div>
         </div>

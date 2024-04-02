@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import OAuth from './OAuth';
+import styles from '../authStyles/signin.module.css'
 
 export default function SignUp() {
   const [formData, setFormData] = useState({});
@@ -37,41 +38,47 @@ export default function SignUp() {
     }
   };
   return (
-    <div>
-      <h1>Sign Up</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type='text'
-          placeholder='Username'
-          id='username'
-          onChange={handleChange}
-        />
-        <input
-          type='email'
-          placeholder='Email'
-          id='email'
-          onChange={handleChange}
-        />
-        <input
-          type='password'
-          placeholder='Password'
-          id='password'
-          onChange={handleChange}
-        />
-        <button
-          disabled={loading}
-        >
-          {loading ? 'Loading...' : 'Sign Up'}
-        </button>
-        <OAuth />
-      </form>
-      <div>
-        <p>Have an account?</p>
-        <Link to='/signin'>
-          <span>Sign in</span>
-        </Link>
+    <div className={styles.main}>
+      <div className={styles.left}>
+          <img src="../../../public/kevin-mccutcheon-TcSckNRL9J8-unsplash.jpg" alt="" />
       </div>
-      <p >{error && 'Something went wrong!'}</p>
+      <div className={styles.right}>
+        <p className={styles.signin}>Sign Up</p>
+        <form onSubmit={handleSubmit} className={styles.form}>
+          <input
+            type='text'
+            placeholder='Username'
+            id='username'
+            onChange={handleChange}
+          />
+          <input
+            type='email'
+            placeholder='Email'
+            id='email'
+            onChange={handleChange}
+          />
+          <input
+            type='password'
+            placeholder='Password'
+            id='password'
+            onChange={handleChange}
+          />
+          <button
+            disabled={loading}
+            className={styles.signinButton}
+          >
+            {loading ? 'Loading...' : 'Sign Up'}
+          </button>
+          <OAuth />
+        </form>
+        <div className={styles.ac}>
+          <p>Have an account?</p>
+          <Link to='/signin'>
+            <span className={styles.link}>Sign in</span>
+          </Link>
+        </div>
+        <p >{error && 'Something went wrong!'}</p>
+      </div>
     </div>
   );
 }

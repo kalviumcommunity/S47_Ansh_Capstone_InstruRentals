@@ -162,14 +162,13 @@ export default function Profile() {
           id='email'
           placeholder='Email'
           className='bg-slate-100 rounded-lg p-3'
-          defaultValue=`{currentUser.data.email}`
+          defaultValue={currentUser.data.email}
           onChange={handleChange}
         />
         <input
           type='password'
           id='password'
           placeholder='Password'
-          defaultValue=''
           className='bg-slate-100 rounded-lg p-3'
           onChange={handleChange}
         />

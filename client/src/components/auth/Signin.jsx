@@ -8,6 +8,7 @@ import {
 import { useDispatch, useSelector } from 'react-redux';
 import OAuth from '../auth/OAuth.jsx';
 import axios from 'axios';
+import styles from '../authStyles/signin.module.css'
 
 export default function Signin() {
   const [formData, setFormData] = useState({});
@@ -43,37 +44,43 @@ export default function Signin() {
     }
   };
   return (
-    <div>
-      <h1>Sign In</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type='email'
-          placeholder='Email'
-          id='email'
-          onChange={handleChange}
-        />
-        <input
-          type='password'
-          placeholder='Password'
-          id='password'
-          onChange={handleChange}
-        />
-        <button
-          disabled={loading}
-        >
-          {loading ? 'Loading...' : 'Sign In'}
-        </button>
-        <OAuth />
-      </form>
-      <div >
-        <p>Dont Have an account?</p>
-        <Link to='/signup'>
-          <span >Sign up</span>
-        </Link>
+    <div className={styles.main}>
+      <div className={styles.left}>
+        <img src="../../../public/kevin-mccutcheon-TcSckNRL9J8-unsplash.jpg" alt="" />
       </div>
-      <p>
-        {error ? error.message || 'Something went wrong!' : ''}
-      </p>
+      <div className={styles.right}>
+        <p className={styles.signin}>Sign in</p>
+        <form onSubmit={handleSubmit} className={styles.form}>
+          <input
+            type='email'
+            placeholder='Email'
+            id='email'
+            onChange={handleChange}
+          />
+          <input
+            type='password'
+            placeholder='Password'
+            id='password'
+            onChange={handleChange}
+          />
+          <button
+            disabled={loading}
+            className={styles.signinButton}
+          >
+            {loading ? 'Loading...' : 'Sign In'}
+          </button>
+          <OAuth />
+        </form>
+        <div className={styles.ac}>
+          <p>Dont Have an account?</p>
+          <Link to='/signup'>
+            <span className={styles.link}>Sign up</span>
+          </Link>
+        </div>
+        <p className={styles.errorMessage}>
+          {error ? error.message || 'Something went wrong!' : ''}
+        </p>
+      </div>
     </div>
   );
 }
