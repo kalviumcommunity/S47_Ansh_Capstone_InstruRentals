@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import OAuth from './OAuth';
 import styles from '../authStyles/signin.module.css'
+import axios from 'axios';
 
 export default function SignUp() {
   const [formData, setFormData] = useState({});
@@ -17,14 +18,15 @@ export default function SignUp() {
     try {
       setLoading(true);
       setError(false);
-      const res = await fetch('http://localhost:3000//api/auth/signup', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-      const data = await res.json();
+      // const res = await fetch('http://localhost:3000//api/auth/signup', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify(formData),
+      // });
+      // const data = await res.json();
+      const data = await axios.post('http://localhost:3000/api/auth/signup',formData)
       console.log(data);
       setLoading(false);
       if (data.success === false) {
@@ -66,6 +68,7 @@ export default function SignUp() {
           <button
             disabled={loading}
             className={styles.signinButton}
+            type='submit'
           >
             {loading ? 'Loading...' : 'Sign Up'}
           </button>

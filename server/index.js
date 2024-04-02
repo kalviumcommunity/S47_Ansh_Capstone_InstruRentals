@@ -10,6 +10,8 @@ import authRoutes from './routes/auth.route.js'
 dotenv.config()
 app.use(express.json());
 app.use(cors());
+app.use(cookieParser());
+  
 
 const uri = process.env.URI;
 
@@ -26,7 +28,6 @@ app.listen(3000,()=>{
   console.log("Server is listening on port 3000.");
 })
 
-app.use(cookieParser());
 
 app.use("/api/user", userRoutes);
 

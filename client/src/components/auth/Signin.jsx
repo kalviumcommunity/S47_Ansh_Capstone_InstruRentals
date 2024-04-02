@@ -32,11 +32,17 @@ export default function Signin() {
       //   body: JSON.stringify(formData),
       // });
       // const data = await res.json();
-      const data = await axios.post("http://localhost:3000/api/auth/signin",formData)
+      const data = await axios.post("http://localhost:3000/api/auth/signin",formData,{
+        headers:{
+          'Authorization': `Bearer ${localStorage.getItem('access_token')}`}
+        
+      })
       if (data.success === false) {
         dispatch(signInFailure(data));
         return;
       }
+      console.log(data);
+      localStorage.setItem("access_token",data.data)
       dispatch(signInSuccess(data));
       navigate('/profile');
     } catch (error) {
