@@ -1,0 +1,415 @@
+{
+    "instruments": {
+      "pianos": [
+        {
+          "company": "Yamaha",
+          "name": "Yamaha Grand Piano",
+          "type": "Acoustic",
+          "imageLink": "../../public/shop/piano.jpg",
+          "productId": "yamahaGrandPiano001",
+          "rentPrice": "₹8000/day",
+          "buyNowPrice": "₹250000"
+        },
+        {
+          "company": "Steinway & Sons",
+          "name": "Steinway & Sons Grand Piano",
+          "type": "Acoustic",
+          "imageLink": "../../public/shop/piano.jpg"    ,
+          "productId": "steinwayGrandPiano001",
+          "rentPrice": "₹10000/day",
+          "buyNowPrice": "₹300000"
+        },
+        {
+          "company": "Kawai",
+          "name": "Kawai Upright Piano",
+          "type": "Acoustic",
+          "imageLink": "../../public/shop/piano.jpg",
+          "productId": "kawaiUprightPiano001",
+          "rentPrice": "₹6000/day",
+          "buyNowPrice": "₹200000"
+        },
+        {
+          "company": "Roland",
+          "name": "Roland Digital Piano",
+          "type": "Electric",
+          "imageLink": "../../public/shop/piano.jpg",
+          "productId": "rolandDigitalPiano001",
+          "rentPrice": "₹4000/day",
+          "buyNowPrice": "₹150000"
+        }
+      ],
+      "keyboards": [
+        {
+          "company": "Yamaha",
+          "name": "Yamaha Keyboard",
+          "type": "Electric",
+          "imageLink": "https://example.com/yamaha_keyboard.jpg",
+          "productId": "yamahaKeyboard001",
+          "rentPrice": "₹2000/day",
+          "buyNowPrice": "₹55000"
+        },
+        {
+          "company": "Casio",
+          "name": "Casio Keyboard",
+          "type": "Electric",
+          "imageLink": "https://example.com/casio_keyboard.jpg",
+          "productId": "casioKeyboard001",
+          "rentPrice": "₹1800/day",
+          "buyNowPrice": "₹50000"
+        },
+        {
+          "company": "Korg",
+          "name": "Korg Keyboard",
+          "type": "Electric",
+          "imageLink": "https://example.com/korg_keyboard.jpg",
+          "productId": "korgKeyboard001",
+          "rentPrice": "₹2200/day",
+          "buyNowPrice": "₹60000"
+        }
+      ],
+      "organs": [
+        {
+          "company": "Hammond",
+          "name": "Hammond Organ",
+          "type": "Electronic",
+          "imageLink": "https://example.com/hammond_organ.jpg",
+          "productId": "hammondOrgan001",
+          "rentPrice": "₹5000/day",
+          "buyNowPrice": "₹120000"
+        },
+        {
+          "company": "Yamaha",
+          "name": "Yamaha Organ",
+          "type": "Electronic",
+          "imageLink": "https://example.com/yamaha_organ.jpg",
+          "productId": "yamahaOrgan001",
+          "rentPrice": "₹4800/day",
+          "buyNowPrice": "₹115000"
+        }
+      ],
+      "synthesisers": [
+        {
+          "company": "Roland",
+          "name": "Roland Synthesiser",
+          "type": "Electronic",
+          "imageLink": "https://example.com/roland_synthesiser.jpg",
+          "productId": "rolandSynthesiser001",
+          "rentPrice": "₹6000/day",
+          "buyNowPrice": "₹150000"
+        },
+        {
+          "company": "Korg",
+          "name": "Korg Synthesiser",
+          "type": "Electronic",
+          "imageLink": "https://example.com/korg_synthesiser.jpg",
+          "productId": "korgSynthesiser001",
+          "rentPrice": "₹5800/day",
+          "buyNowPrice": "₹145000"
+        }
+      ],
+      "electricGuitars": [
+        {
+          "company": "Fender",
+          "name": "Fender Electric Guitar",
+          "type": "Electric",
+          "imageLink": "https://example.com/fender_electric.jpg",
+          "productId": "fenderElectric001",
+          "rentPrice": "₹2000/day",
+          "buyNowPrice": "₹47000"
+        },
+        {
+          "company": "Gibson",
+          "name": "Gibson Electric Guitar",
+          "type": "Electric",
+          "imageLink": "https://example.com/gibson_electric.jpg",
+          "productId": "gibsonElectric001",
+          "rentPrice": "₹2500/day",
+          "buyNowPrice": "₹57000"
+        },
+        {
+          "company": "Ibanez",
+          "name": "Ibanez Electric Guitar",
+          "type": "Electric",
+          "imageLink": "https://example.com/ibanez_electric.jpg",
+          "productId": "ibanezElectric001",
+          "rentPrice": "₹3000/day",
+          "buyNowPrice": "₹67000"
+        },
+        {
+          "company": "PRS",
+          "name": "PRS Electric Guitar",
+          "type": "Electric",
+          "imageLink": "https://example.com/prs_electric.jpg",
+          "productId": "prsElectric001",
+          "rentPrice": "₹3500/day",
+          "buyNowPrice": "₹77000"
+        }
+      ],
+      "acousticGuitars": [
+        {
+          "company": "Fender",
+          "name": "Fender Acoustic Guitar",
+          "type": "Acoustic",
+          "imageLink": "https://example.com/fender_acoustic.jpg",
+          "productId": "fenderAcoustic001",
+          "rentPrice": "₹2000/day",
+          "buyNowPrice": "₹47000"
+        },
+        {
+          "company": "Gibson",
+          "name": "Gibson Acoustic Guitar",
+          "type": "Acoustic",
+          "imageLink": "https://example.com/gibson_acoustic.jpg",
+          "productId": "gibsonAcoustic001",
+          "rentPrice": "₹2500/day",
+          "buyNowPrice": "₹57000"
+        },
+        {
+          "company": "Taylor",
+          "name": "Taylor Acoustic Guitar",
+          "type": "Acoustic",
+          "imageLink": "https://example.com/taylor_acoustic.jpg",
+          "productId": "taylorAcoustic001",
+          "rentPrice": "₹3000/day",
+          "buyNowPrice": "₹67000"
+        },
+        {
+          "company": "Martin",
+          "name": "Martin Acoustic Guitar",
+          "type": "Acoustic",
+          "imageLink": "https://example.com/martin_acoustic.jpg",
+          "productId": "martinAcoustic001",
+          "rentPrice": "₹3500/day",
+          "buyNowPrice": "₹77000"
+        }
+      ],
+      "violins": [
+        {
+          "company": "Stradivarius",
+          "name": "Stradivarius Violin",
+          "type": "Bowed",
+          "imageLink": "https://example.com/stradivarius_violin.jpg",
+          "productId": "stradivariusViolin001",
+          "rentPrice": "₹5000/day",
+          "buyNowPrice": "₹120000"
+        },
+        {
+          "company": "Yamaha",
+          "name": "Yamaha Violin",
+          "type": "Bowed",
+          "imageLink": "https://example.com/yamaha_violin.jpg",
+          "productId": "yamahaViolin001",
+          "rentPrice": "₹4500/day",
+          "buyNowPrice": "₹110000"
+        },
+        {
+          "company": "Stentor",
+          "name": "Stentor Violin",
+          "type": "Bowed",
+          "imageLink": "https://example.com/stentor_violin.jpg",
+          "productId": "stentorViolin001",
+          "rentPrice": "₹4000/day",
+          "buyNowPrice": "₹95000"
+        },
+        {
+          "company": "Cecilio",
+          "name": "Cecilio Violin",
+          "type": "Bowed",
+          "imageLink": "https://example.com/cecilio_violin.jpg",
+          "productId": "cecilioViolin001",
+          "rentPrice": "₹4800/day",
+          "buyNowPrice": "₹115000"
+        }
+      ],
+      "cellos": [
+        {
+          "company": "Yamaha",
+          "name": "Yamaha Cello",
+          "type": "Bowed",
+          "imageLink": "https://example.com/yamaha_cello.jpg",
+          "productId": "yamahaCello001",
+          "rentPrice": "₹3000/day",
+          "buyNowPrice": "₹75000"
+        },
+        {
+          "company": "Stentor",
+          "name": "Stentor Cello",
+          "type": "Bowed",
+          "imageLink": "https://example.com/stentor_cello.jpg",
+          "productId": "stentorCello001",
+          "rentPrice": "₹2800/day",
+          "buyNowPrice": "₹70000"
+        },
+        {
+          "company": "Cecilio",
+          "name": "Cecilio Cello",
+          "type": "Bowed",
+          "imageLink": "https://example.com/cecilio_cello.jpg",
+          "productId": "cecilioCello001",
+          "rentPrice": "₹3200/day",
+          "buyNowPrice": "₹80000"
+        }
+      ],
+      "dynamicMics": [
+        {
+          "company": "Shure",
+          "name": "Shure SM58 Dynamic Microphone",
+          "type": "Dynamic",
+          "imageLink": "https://example.com/shure_sm58.jpg",
+          "productId": "shureSM58Dynamic001",
+          "rentPrice": "₹1000/day",
+          "buyNowPrice": "₹30000"
+        },
+        {
+          "company": "Sennheiser",
+          "name": "Sennheiser e835 Dynamic Microphone",
+          "type": "Dynamic",
+          "imageLink": "https://example.com/sennheiser_e835.jpg",
+          "productId": "sennheiserE835Dynamic001",
+          "rentPrice": "₹1200/day",
+          "buyNowPrice": "₹35000"
+        }
+      ],
+      "condenserMics": [
+        {
+          "company": "Audio-Technica",
+          "name": "Audio-Technica AT2020 Condenser Microphone",
+          "type": "Condenser",
+          "imageLink": "https://example.com/audio_technica_at2020.jpg",
+          "productId": "audioTechnicaAT2020Condenser001",
+          "rentPrice": "₹1500/day",
+          "buyNowPrice": "₹40000"
+        },
+        {
+          "company": "Rode",
+          "name": "Rode NT1-A Condenser Microphone",
+          "type": "Condenser",
+          "imageLink": "https://example.com/rode_nt1a.jpg",
+          "productId": "rodeNT1ACondenser001",
+          "rentPrice": "₹1800/day",
+          "buyNowPrice": "₹45000"
+        }
+      ],
+      "wirelessMics": [
+        {
+          "company": "Shure",
+          "name": "Shure BLX24/SM58 Wireless Microphone System",
+          "type": "Wireless",
+          "imageLink": "https://example.com/shure_blx24_sm58.jpg",
+          "productId": "shureBLX24SM58Wireless001",
+          "rentPrice": "₹2500/day",
+          "buyNowPrice": "₹60000"
+        },
+        {
+          "company": "Sennheiser",
+          "name": "Sennheiser EW 100 G3 Wireless Microphone System",
+          "type": "Wireless",
+          "imageLink": "https://example.com/sennheiser_ew100g3.jpg",
+          "productId": "sennheiserEW100G3Wireless001",
+          "rentPrice": "₹2800/day",
+          "buyNowPrice": "₹65000"
+        }
+      ],
+      "bassAmplifiers": [
+        {
+          "company": "Ampeg",
+          "name": "Ampeg BA-210 V2 Bass Combo Amplifier",
+          "type": "Bass",
+          "imageLink": "https://example.com/ampeg_ba210v2.jpg",
+          "productId": "ampegBA210V2Bass001",
+          "rentPrice": "₹4000/day",
+          "buyNowPrice": "₹100000"
+        },
+        {
+          "company": "Fender",
+          "name": "Fender Rumble 500 Bass Combo Amplifier",
+          "type": "Bass",
+          "imageLink": "https://example.com/fender_rumble500.jpg",
+          "productId": "fenderRumble500Bass001",
+          "rentPrice": "₹3500/day",
+          "buyNowPrice": "₹95000"
+        }
+      ],
+      "guitarAmplifiers": [
+        {
+          "company": "Marshall",
+          "name": "Marshall DSL40CR Guitar Combo Amplifier",
+          "type": "Guitar",
+          "imageLink": "https://example.com/marshall_dsl40cr.jpg",
+          "productId": "marshallDSL40CRGuitar001",
+          "rentPrice": "₹3000/day",
+          "buyNowPrice": "₹85000"
+        },
+        {
+          "company": "Fender",
+          "name": "Fender Hot Rod Deluxe IV Guitar Combo Amplifier",
+          "type": "Guitar",
+          "imageLink": "https://example.com/fender_hotrod_deluxe.jpg",
+          "productId": "fenderHotRodDeluxeGuitar001",
+          "rentPrice": "₹2800/day",
+          "buyNowPrice": "₹80000"
+        }
+      ],
+      "paSpeakers": [
+        {
+          "company": "JBL",
+          "name": "JBL EON615 Portable PA Speaker",
+          "type": "PA",
+          "imageLink": "https://example.com/jbl_eon615.jpg",
+          "productId": "jblEON615PASpeaker001",
+          "rentPrice": "₹5000/day",
+          "buyNowPrice": "₹120000"
+        },
+        {
+          "company": "QSC",
+          "name": "QSC K12.2 Active PA Speaker",
+          "type": "PA",
+          "imageLink": "https://example.com/qsc_k12_2.jpg",
+          "productId": "qscK12_2PASpeaker001",
+          "rentPrice": "₹5500/day",
+          "buyNowPrice": "₹130000"
+        }
+      ],
+      "monitorSpeakers": [
+        {
+          "company": "Yamaha",
+          "name": "Yamaha HS8 Studio Monitor",
+          "type": "Monitor",
+          "imageLink": "https://example.com/yamaha_hs8.jpg",
+          "productId": "yamahaHS8Monitor001",
+          "rentPrice": "₹3000/day",
+          "buyNowPrice": "₹80000"
+        },
+        {
+          "company": "KRK",
+          "name": "KRK Rokit 5 G4 Studio Monitor",
+          "type": "Monitor",
+          "imageLink": "https://example.com/krk_rokit5_g4.jpg",
+          "productId": "krkRokit5G4Monitor001",
+          "rentPrice": "₹2800/day",
+          "buyNowPrice": "₹75000"
+        }
+      ],
+      "effectPedals": [
+        {
+          "company": "Boss",
+          "name": "Boss DS-1 Distortion Pedal",
+          "type": "Effect Pedal",
+          "imageLink": "https://example.com/boss_ds1.jpg",
+          "productId": "bossDS1DistortionPedal001",
+          "rentPrice": "₹800/day",
+          "buyNowPrice": "₹20000"
+        },
+        {
+          "company": "TC Electronic",
+          "name": "TC Electronic Hall of Fame 2 Reverb Pedal",
+          "type": "Effect Pedal",
+          "imageLink": "https://example.com/tc_electronic_hall_of_fame2.jpg",
+          "productId": "tcElectronicHallOfFame2ReverbPedal001",
+          "rentPrice": "₹1000/day",
+          "buyNowPrice": "₹25000"
+        }
+      ]
+    }
+  }
+  

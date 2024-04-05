@@ -8,6 +8,7 @@ import Signin from './components/auth/Signin'
 import PrivateRoute from './components/auth/PrivateRoute';
 import { Routes, Route } from 'react-router-dom';
 import { Suspense } from 'react';
+import Products from './components/rentals/Products';
 
 function App() {
 
@@ -22,6 +23,8 @@ function App() {
           <Route element={<PrivateRoute />}>
             <Route path='/profile' element={<Profile />} />
           </Route>
+          <Route path='/shop' element={<Shop/>}></Route>
+          <Route path='/products' element={<Products/>}></Route>
         </Routes>
       </Suspense>
     

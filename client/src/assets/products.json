@@ -1,162 +1,143 @@
 {
-  "selectCategory": [
-    {
+    "selectCategory": [
+      {
         "name": "Guitar",
         "type": "Acoustic",
+        "description": "A stringed musical instrument that typically has six strings and is played by strumming or plucking the strings with the fingers or a pick.",
         "imageLink": "../../public/shop/gg.jpg",
         "productId": "guitar001"
-    } 
-],  
-  "string": [
-      {
-          "name": "Guitar",
-          "type": "Acoustic",
-          "imageLink": "../../public/shop/gg.jpg",
-          "productId": "guitar001"
-      },
-      {
-          "name": "Electric Guitar",
-          "type": "Electric",
-          "imageLink": "../../public/shop/electric_guitar.jpg",
-          "productId": "electricGuitar001"
-      },
-      {
-          "name": "Violin",
-          "type": "Bowed",
-          "imageLink": "../../public/shop/violin.jpg",
-          "productId": "violin001"
-      },
-      {
-          "name": "Cello",
-          "type": "Bowed",
-          "imageLink": "../../public/shop/cello.jpg",
-          "productId": "cello001"
       }
-  ],
-  "wind": [
+    ],
+    "string": [
       {
-          "name": "Flute",
-          "type": "Woodwind",
-          "imageLink": "",
-          "productId": "flute001"
+        "name": "Guitar",
+        "type": "Acoustic",
+        "description": "A stringed musical instrument that typically has six strings and is played by strumming or plucking the strings with the fingers or a pick.",
+        "imageLink": "../../public/shop/gg.jpg",
+        "productId": "guitar001"
       },
       {
-          "name": "Trumpet",
-          "type": "Brass",
-          "imageLink": "",
-          "productId": "trumpet001"
+        "name": "Electric Guitar",
+        "type": "Electric",
+        "description": "Similar to an acoustic guitar but with electric pickups that convert string vibrations into electrical signals, which can be amplified.",
+        "imageLink": "../../public/shop/electric_guitar.jpg",
+        "productId": "electricGuitar001"
       },
       {
-          "name": "Saxophone",
-          "type": "Woodwind",
-          "imageLink": "",
-          "productId": "saxophone001"
+        "name": "Violin",
+        "type": "Bowed",
+        "description": "A string instrument that is played with a bow, producing sound by vibrating strings stretched over a resonating body.",
+        "imageLink": "../../public/shop/violin.jpg",
+        "productId": "violin001"
       },
       {
-          "name": "Clarinet",
-          "type": "Woodwind",
-          "imageLink": "",
-          "productId": "clarinet001"
+        "name": "Cello",
+        "type": "Bowed",
+        "description": "A large, bowed string instrument with four strings tuned in perfect fifths, known for its deep, rich sound in the bass and tenor registers.",
+        "imageLink": "../../public/shop/cello.jpg",
+        "productId": "cello001"
       }
-  ],
-  "percussion": [
+    ],
+    "keyboard": [
       {
-          "name": "Drum Kit",
-          "type": "Membrane",
-          "imageLink": "",
-          "productId": "drumKit001"
+        "name": "Piano",
+        "type": "Acoustic",
+        "description": "A large musical instrument with a row of black and white keys that are pressed to play notes, producing sound by striking strings with hammers.",
+        "imageLink": "../../public/shop/piano.jpg",
+        "productId": "piano001"
       },
       {
-          "name": "Xylophone",
-          "type": "Tuned Percussion",
-          "imageLink": "",
-          "productId": "xylophone001"
+        "name": "Keyboard",
+        "type": "Electric",
+        "description": "A musical instrument consisting of a row of keys that are pressed, triggering electronic sounds.",
+        "imageLink": "../../public/shop/keyboard.jpg",
+        "productId": "keyboard001"
       },
       {
-          "name": "Conga",
-          "type": "Membrane",
-          "imageLink": "",
-          "productId": "conga001"
+        "name": "Organ",
+        "type": "Electronic",
+        "description": "A keyboard instrument that produces sound by pipes or reeds fed with air from a bellows or electronic means.",
+        "imageLink": "../../public/shop/organ.jpg",
+        "productId": "organ001"
       },
       {
-          "name": "Tambourine",
-          "type": "Shaken",
-          "imageLink": "",
-          "productId": "tambourine001"
+        "name": "Synthesizer",
+        "type": "Electronic",
+        "description": "An electronic musical instrument that generates audio signals that may be converted to sound through a loudspeaker or headphones.",
+        "imageLink": "../../public/shop/syth.jpg",
+        "productId": "synthesizer001"
       }
-  ],
-  "keyboard": [
+    ],
+    "speakers": [
       {
-          "name": "Piano",
-          "type": "Acoustic",
-          "imageLink": "../../public/shop/piano.jpg",
-          "productId": "piano001"
+        "name": "Monitor Speaker",
+        "type": "Studio Monitor",
+        "description": "Speakers designed for audio production applications such as recording studios, filmmaking, television studios, and radio studios.",
+        "imageLink": "",
+        "productId": "monitorSpeaker001"
       },
       {
-          "name": "Keyboard",
-          "type": "Electric",
-          "imageLink": "../../public/shop/keyboard.jpg",
-          "productId": "keyboard001"
-      },
-      {
-          "name": "Organ",
-          "type": "Electronic",
-          "imageLink": "../../public/shop/organ.jpg",
-          "productId": "organ001"
-      },
-      {
-          "name": "Synthesizer",
-          "type": "Electronic",
-          "imageLink": "../../public/shop/syth.jpg",
-          "productId": "synthesizer001"
+        "name": "PA Speaker",
+        "type": "Public Address",
+        "description": "Speakers used to address a public gathering or crowd, commonly used in concerts, public events, and rallies.",
+        "imageLink": "",
+        "productId": "paSpeaker001"
       }
-  ],
-  "speakers": [
+    ],
+    "amplifiers": [
       {
-          "name": "Monitor Speaker",
-          "type": "Studio Monitor",
-          "imageLink": "",
-          "productId": "monitorSpeaker001"
+        "name": "Guitar Amplifier",
+        "type": "Combo Amp",
+        "description": "An amplifier specifically designed to amplify the sound of an electric guitar.",
+        "imageLink": "",
+        "productId": "guitarAmp001"
       },
       {
-          "name": "PA Speaker",
-          "type": "Public Address",
-          "imageLink": "",
-          "productId": "paSpeaker001"
+        "name": "Bass Amplifier",
+        "type": "Head Amp",
+        "description": "An amplifier specifically designed to amplify the sound of a bass guitar.",
+        "imageLink": "",
+        "productId": "bassAmp001"
       }
-  ],
-  "amplifiers": [
+    ],
+    "mics": [
       {
-          "name": "Guitar Amplifier",
-          "type": "Combo Amp",
-          "imageLink": "",
-          "productId": "guitarAmp001"
+        "name": "Dynamic Microphone",
+        "type": "Dynamic",
+        "description": "A type of microphone that uses electromagnetic induction to generate an electrical signal.",
+        "imageLink": "",
+        "productId": "dynamicMic001"
       },
       {
-          "name": "Bass Amplifier",
-          "type": "Head Amp",
-          "imageLink": "",
-          "productId": "bassAmp001"
+        "name": "Condenser Microphone",
+        "type": "Condenser",
+        "description": "A type of microphone that uses a capacitor to convert acoustical energy into electrical energy.",
+        "imageLink": "",
+        "productId": "condenserMic001"
+      },
+      {
+        "name": "Wireless Microphone",
+        "type": "Wireless",
+        "description": "A microphone without a physical cable connecting it directly to the sound recording or amplifying equipment with which it is associated.",
+        "imageLink": "",
+        "productId": "wirelessMic001"
       }
-  ],
-  "mics": [
+    ],
+    "effectPedals": [
       {
-          "name": "Dynamic Microphone",
-          "type": "Dynamic",
-          "imageLink": "",
-          "productId": "dynamicMic001"
+        "name": "Distortion Pedal",
+        "type": "Effect Pedal",
+        "description": "A pedal that alters the sound of an electric guitar or other amplified instrument by increasing its gain and clipping the signal, producing a 'distorted' sound.",
+        "imageLink": "",
+        "productId": "distortionPedal001"
       },
       {
-          "name": "Condenser Microphone",
-          "type": "Condenser",
-          "imageLink": "",
-          "productId": "condenserMic001"
-      },
-      {
-          "name": "Wireless Microphone",
-          "type": "Wireless",
-          "imageLink": "",
-          "productId": "wirelessMic001"
+        "name": "Reverb Pedal",
+        "type": "Effect Pedal",
+        "description": "A pedal that simulates the reverberation or 'reverb' of a sound in a physical space, adding depth and ambiance to the audio signal.",
+        "imageLink": "",
+        "productId": "reverbPedal001"
       }
-  ]
-}
+    ]
+  }
+  

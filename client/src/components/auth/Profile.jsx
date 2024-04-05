@@ -76,7 +76,7 @@ export default function Profile() {
       //   body: JSON.stringify(formData),
       // });
       // const data = await res.json();
-      const data = await axios.put(`http://localhost:3000/api/user/update/${currentUser.data._id}`, formData)
+      const data = await axios.put(`http://localhost:3000/api/user/update/${currentUser.data.user._id}`, formData)
       if (data.success === false) {
         dispatch(updateUserFailure(data));
         return;
@@ -95,7 +95,7 @@ export default function Profile() {
       //   method: 'DELETE',
       // });
       // const data = await res.json();
-      const data = await axios.delete(`http://localhost:3000/api/user/delete/${currentUser.data._id}`)
+      const data = await axios.delete(`http://localhost:3000/api/user/delete/${currentUser.data.user._id}`)
       if (data.success === false) {
         dispatch(deleteUserFailure(data));
         return;
@@ -152,11 +152,11 @@ export default function Profile() {
             )}
           </p>
           <input
-            defaultValue={currentUser.data.username}
             type='text'
             id='username'
             placeholder='Username'
             onChange={handleChange}
+            defaultValue={currentUser.data.username}
           />
           <input
             defaultValue={currentUser.data.email}

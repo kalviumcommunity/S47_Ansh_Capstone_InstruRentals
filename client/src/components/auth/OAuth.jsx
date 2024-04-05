@@ -32,7 +32,7 @@ const OAuth = () => {
                 email : result.user.email
             })
             dispatch(signInSuccess(data));
-            navigate('/profile')
+            navigate('/shop')
         }catch(error){
             console.error("Could not login with google",error);
         }
