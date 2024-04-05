@@ -16,8 +16,25 @@ const Products = () => {
                     <div>
                         <img src={item.imageLink} alt="" />
                     </div>
-                    {item.company}
-                    {item.rentPrice}
+                    <div className={styles.details}>
+                        <div>
+                            {item.name} <br />
+                            <div className={styles.aom}>
+                                <p>{item.company}</p>
+                                <p>{item.type}</p>
+                            </div>
+                        </div>
+                        <p>Rent price : {item.rentPrice}</p>
+                        <p>Buy now Price : {item.buyNowPrice}</p>
+                        <div className={styles.buttons}>
+                            <div>
+                                <button>Rent Now</button>
+                            </div>
+                            <div>
+                                <button>Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             )
         })} 

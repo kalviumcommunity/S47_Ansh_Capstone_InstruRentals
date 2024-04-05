@@ -3,26 +3,54 @@
 }
 
 .container{
-    background-color: aliceblue ;
+    background-color: aliceblue;
     display: grid;
     grid-template-columns: repeat(3,50vh);
-    grid-gap: 3vh;
-    width: 100%;
+    grid-gap: 4vh;
+    width: 100%;    
     height: 100%;
-    justify-content: center;
     padding-top: 10vh;
+    justify-content: center;
     padding-bottom: 10vh;
-    
 }
 
 .card img{
-    height: 20vh;
+    height: 25vh;
+    width: 45vh;
+    border-radius: 0.7vh;
 }
 .card{
-    border: 1px solid black;
-    height: 50vh;
-    width: 40vh;
+    padding: 2vh;
+    border: 1px solid #191919;
+    background-image: linear-gradient(80deg, #19AEA4,white);
+    height: 60vh;
+    width: 45vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    border-radius: 0.9vh;
+    transition:background-image 3s;
+}
+.card:hover{
+    background-image: linear-gradient(80deg,white, #19AEA4);
+    transition: 3s;
+}
+.buttons{
+    display: flex;
+    width: 25vh;
+    justify-content: space-between;
+}
+.buttons button{
+    padding: 1vh;
+    background-color: transparent;
+    border: 1px solid black;
+    width: 10vh;
+    border-radius: 0.7vh;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+}
+.aom{
+    display: flex;
+    justify-content: space-between  ;
 }

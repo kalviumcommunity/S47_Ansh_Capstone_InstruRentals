@@ -5,7 +5,7 @@
           "company": "Yamaha",
           "name": "Yamaha Grand Piano",
           "type": "Acoustic",
-          "imageLink": "../../public/piano-keyboard.png",
+          "imageLink": "../../public/shop/piano.jpg",
           "productId": "yamahaGrandPiano001",
           "rentPrice": "₹8000/day",
           "buyNowPrice": "₹250000"
@@ -14,7 +14,7 @@
           "company": "Steinway & Sons",
           "name": "Steinway & Sons Grand Piano",
           "type": "Acoustic",
-          "imageLink": "../../public/piano-keyboard.png"    ,
+          "imageLink": "../../public/shop/piano.jpg"    ,
           "productId": "steinwayGrandPiano001",
           "rentPrice": "₹10000/day",
           "buyNowPrice": "₹300000"
@@ -23,7 +23,7 @@
           "company": "Kawai",
           "name": "Kawai Upright Piano",
           "type": "Acoustic",
-          "imageLink": "../../public/piano-keyboard.png",
+          "imageLink": "../../public/shop/piano.jpg",
           "productId": "kawaiUprightPiano001",
           "rentPrice": "₹6000/day",
           "buyNowPrice": "₹200000"
@@ -32,7 +32,7 @@
           "company": "Roland",
           "name": "Roland Digital Piano",
           "type": "Electric",
-          "imageLink": "../../public/piano-keyboard.png",
+          "imageLink": "../../public/shop/piano.jpg",
           "productId": "rolandDigitalPiano001",
           "rentPrice": "₹4000/day",
           "buyNowPrice": "₹150000"
