@@ -29,6 +29,21 @@
     border-bottom: 1px solid white;
     transition: border-bottom 0.4s ease-in;
 }
+
+.profilePicture img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 8vh;
+    width: 8vh;
+    cursor: pointer;
+}
+
+.signoutHover{
+    display: none;
+}
+.profilePicturem:hover .signoutHover{
+    display: block;
+}
   
 .navs{
     display: flex;
