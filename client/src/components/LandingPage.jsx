@@ -2,11 +2,20 @@ import React from "react";
 import NavigationBar from "./NavigationBar";
 import styles from "./landing.module.css";
 import Footer from "./Footer";
+import { Link, useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const LandingPage = () => {
 
-
-
+  const {currentUser} = useSelector((state) => state.user)
+  const navigate = useNavigate()
+  const handleStart = () =>{
+    if (currentUser){
+      navigate('/shop')
+    }else{
+      navigate('/signin')
+    }
+  }
   return (
     <div className={styles.main}>
       <NavigationBar />
@@ -26,8 +35,9 @@ const LandingPage = () => {
             <br /> Musical Horizons.
           </div>
           <div className={styles.start}>
-            <button>Start your Journey
-            </button>
+              <button onClick={handleStart}>
+                  Start your Journey
+              </button>
             <hr/>
           </div>
         </div>

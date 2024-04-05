@@ -35,16 +35,15 @@ export default function Signin() {
       const data = await axios.post("http://localhost:3000/api/auth/signin",formData,{
         headers:{
           'Authorization': `Bearer ${localStorage.getItem('access_token')}`}
-        
       })
       if (data.success === false) {
         dispatch(signInFailure(data));
         return;
       }
       console.log(data);
-      localStorage.setItem("access_token",data.data)
+      localStorage.setItem("access_token",data.data.token)
       dispatch(signInSuccess(data));
-      navigate('/profile');
+      navigate('/shop');
     } catch (error) {
       dispatch(signInFailure(error));
     }

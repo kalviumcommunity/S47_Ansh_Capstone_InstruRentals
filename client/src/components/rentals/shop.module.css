@@ -16,14 +16,22 @@
     border-radius: 3vh;
     border: 1px solid white;
 }
-
+.product{
+    width: 150vh;
+}
 .product:nth-child(even) {
     display: flex;
+    align-items: flex-end;
+    padding-bottom: 10vh;
+    justify-content: space-evenly;
 }
 
 .product:nth-child(odd) {
     display: flex;
     flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
 }
 
 .sele {
@@ -34,7 +42,6 @@
     font-size: 3vh;
     padding: 3vh;
     background-color: rgba(0, 0, 0, 0.4);
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.4);
     border-radius: 1vh;
     margin-bottom: 3vh;
     margin-top: 5vh;
@@ -42,16 +49,12 @@
 
 select {
     padding: 1vh;
-    background-color: transparent;
-    color: white;
     outline: none;
     height: 4.5vh;
     border-radius: 0.5vh;
 }
 
-option {
-    background-color: transparent;
-}
+
 
 .nothing {
     height: 30vh;
@@ -70,8 +73,8 @@ option {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 51.150895140664964vh;
-    height: 51.150895140664964vh;
+    width: 52vh;
+    height: 52vh;
     border: 1px solid white;
     border-radius: 3vh;
     background-color: rgba(0, 0, 0, 0.7);
@@ -80,25 +83,47 @@ option {
 .product {
     justify-content: space-around;
     align-items: center;
-    padding: 4vh;
+    padding: 2vh;
     margin-bottom: 2vh;
 }
 
 .products {
     color: white;
-    max-height: 400px; /* Set the maximum height of the products container */
-    overflow-y: auto; /* Add scrollbar when content exceeds the maximum height */
+    max-height: 150vh; /* Set the maximum height of the products container */
+    overflow-y: scroll;/* Add scrollbar when content exceeds the maximum height*/
 }
 
 .buttons button {
     padding: 1vh;
-    width: 15vh;
+    width: 100vh;
     background-color: transparent;
+    border: 1px solid white;
     color: white;
+}
+.nameOfItem{
+    font-size: 3vh;
+    width: 35vh;
+    color: #19AEA4;
+    font-weight: 600;
+}
+.descrpitionOfItem{
+    font-size: 2vh;
+    width: 35vh;
 }
 
 .white button {
     background-color: white;
+}
+
+.selectors{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    height: 10vh;
+    align-items:center;
+}
+.options{
+    border: 1px solid white;
 }
 
 .buttons {
@@ -106,4 +131,14 @@ option {
     display: flex;
     justify-content: space-between;
     margin-top: 5vh;
+}
+.productsContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.outerDrop{
+    margin: 2vh;
+    display: flex;
+    justify-content: center ;
 }

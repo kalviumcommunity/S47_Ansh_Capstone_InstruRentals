@@ -13,7 +13,10 @@ const NavigationBar = () => {
         <div className={styles.main}>
             <div className={styles.container}>
                 <div className={styles.navs}>
-                    <div className={styles.l}>Home
+                    <div className={styles.l}>
+                        <Link to='/' className={styles.homeLink}>
+                            Home
+                        </Link>
                     </div>
                     <div className={styles.l}>Client</div>
                     <div className={styles.l}>Studios</div>
@@ -39,7 +42,7 @@ const NavigationBar = () => {
                     currentUser && (
                         <div className={styles.profilePicture}>
                             <Link to='/profile'>
-                                <img src={currentUser.data.profilePicture} className={styles.profileimage} alt="profile" />    
+                                <img src={currentUser.data.profilePicture} className={styles.profileimage} alt="profile" />
                             </Link>
                             <div className={styles.signoutHover}>
                                 Signout

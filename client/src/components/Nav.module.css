@@ -6,6 +6,9 @@
 .main{
     display: flex;
     justify-content: center;
+    align-items: center;
+    border-bottom: 1px double white;
+    height: 10vh;
 }
 .container{
     display: flex;
@@ -60,4 +63,9 @@
     padding: 1vh;
     border:  transparent;
     border-radius: 0.5vh;
+}
+
+.homeLink{
+    color: white;
+    text-decoration: none;
 }
