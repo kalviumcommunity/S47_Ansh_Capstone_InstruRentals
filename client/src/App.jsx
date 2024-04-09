@@ -9,6 +9,7 @@ import PrivateRoute from './components/auth/PrivateRoute';
 import { Routes, Route } from 'react-router-dom';
 import { Suspense } from 'react';
 import Products from './components/rentals/Products';
+import Cart from './components/rentals/Cart'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           </Route>
           <Route path='/shop' element={<Shop/>}></Route>
           <Route path='/products' element={<Products/>}></Route>
+          <Route path='/cart' element={<Cart/>}></Route>
         </Routes>
       </Suspense>
     

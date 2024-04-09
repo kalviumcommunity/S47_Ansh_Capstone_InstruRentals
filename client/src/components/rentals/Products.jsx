@@ -3,6 +3,7 @@ import data from '../../assets/allProfucts.json'
 import NavigationBar from '../NavigationBar';
 import styles from './products.module.css'
 import Footer from '../Footer';
+import { Link } from 'react-router-dom';
 
 const Products = () => {
     console.log(data.instruments);
@@ -17,18 +18,20 @@ const Products = () => {
                         <img src={item.imageLink} alt="" />
                     </div>
                     <div className={styles.details}>
-                        <div>
-                            {item.name} <br />
+                        <div className={styles.companyDetails}>
+                            <p className={styles.name}>{item.name}</p>
                             <div className={styles.aom}>
-                                <p>{item.company}</p>
+                                <p className={styles.companyName}>{item.company}</p>
                                 <p>{item.type}</p>
                             </div>
                         </div>
-                        <p>Rent price : {item.rentPrice}</p>
-                        <p>Buy now Price : {item.buyNowPrice}</p>
+                        <p className={styles.prices}>Rent price : <span className={styles.p}>{item.rentPrice}</span></p>
+                        <p className={styles.prices}>Buy now Price :<span className={styles.p}>{item.buyNowPrice}</span></p>
                         <div className={styles.buttons}>
                             <div>
-                                <button>Rent Now</button>
+                                <Link to='/cart'>
+                                    <button>Rent Now</button>
+                                </Link>
                             </div>
                             <div>
                                 <button>Buy Now</button>
