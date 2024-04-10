@@ -83,7 +83,7 @@ export const google = async (req, res, next) => {
         console.log(token);
         const { password: hashedPassword2, ...rest } = newUser._doc;
         const expiryDate = new Date(Date.now() + 3600000); // 1 hour
-        rest.token = token;
+        rest.token = token; 
         res
           .cookie('access_token', token, {
             httpOnly: true,

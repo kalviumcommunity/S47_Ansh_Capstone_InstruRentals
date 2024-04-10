@@ -7,12 +7,12 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 import userRoutes from './routes/user.route.js'
 import authRoutes from './routes/auth.route.js'
+import payRoutes from './routes/payment.route.js'
 dotenv.config()
 app.use(express.json());
 app.use(cors());
 app.use(cookieParser());
-  
-
+app.use(express.urlencoded({extended:false}));
 const uri = process.env.URI;
 
 mongoose
@@ -32,6 +32,8 @@ app.listen(3000,()=>{
 app.use("/api/user", userRoutes);
 
 app.use("/api/auth",authRoutes);
+
+app.use("/api/payment",payRoutes);
 
 
 app.use((err, req, res, next) => {
