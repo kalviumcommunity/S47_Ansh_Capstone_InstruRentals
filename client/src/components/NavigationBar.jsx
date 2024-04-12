@@ -1,13 +1,10 @@
-import React, { useState } from 'react'
-import styles from './Nav.module.css'
-import { Link } from 'react-router-dom'
-import { useSelector } from 'react-redux'
+import React from 'react';
+import styles from './Nav.module.css';
+import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const NavigationBar = () => {
-
-    const { currentUser } = useSelector((state) => state.user)
-
-    console.log(currentUser);
+    const { currentUser } = useSelector((state) => state.user);
 
     return (
         <div className={styles.main}>
@@ -35,7 +32,6 @@ const NavigationBar = () => {
                                 </Link>
                             </div>
                         </div>
-
                     )
                 }
                 {
@@ -50,10 +46,15 @@ const NavigationBar = () => {
                         </div>
                     )
                 }
-
+                {/* Cart Button */}
+                <div className={styles.cartButton}>
+                    <Link to='/cart'>
+                        <button className={styles.cartButton}>Cart</button>
+                    </Link>
+                </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default NavigationBar
+export default NavigationBar;
