@@ -10,13 +10,13 @@ import { Routes, Route } from 'react-router-dom';
 import { Suspense } from 'react';
 import Products from './components/rentals/Products';
 import Cart from './components/rentals/Cart'
+import PaymentSuccess from './components/payments/PaymentSuccess';
 
 function App() {
 
   return (
     <>
       <Suspense fallback={<div>Loading...</div>}>
-
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='/signin' element={<Signin />} />
@@ -27,9 +27,9 @@ function App() {
           <Route path='/shop' element={<Shop/>}></Route>
           <Route path='/products' element={<Products/>}></Route>
           <Route path='/cart' element={<Cart/>}></Route>
+          <Route path="/payment-success" element={<PaymentSuccess />} />
         </Routes>
       </Suspense>
-    
     </>
   )
 }
