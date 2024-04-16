@@ -8,6 +8,7 @@ const PORT = process.env.PORT || 3000;
 import userRoutes from './routes/user.route.js'
 import authRoutes from './routes/auth.route.js'
 import payRoutes from './routes/payment.route.js'
+import Instrument from './models/instrument.model.js';
 dotenv.config()
 app.use(express.json());
 app.use(cors());
@@ -17,13 +18,22 @@ const uri = process.env.URI;
 
 mongoose
   .connect(uri)
-  .then(()=>{
+  .then((data)=>{
     console.log("Connected to MongoDB");
   })
   .catch((err)=>{
     console.log(err);
   })
-
+  app.get('/instruments', async (req, res) => {
+    try {
+      // Query MongoDB to fetch all instruments
+      const instruments = await Instrument.find({});
+      res.json({ success: true, data: instruments });
+    } catch (error) {
+      console.error("Error fetching instrument data:", error);
+      res.status(500).json({ success: false, message: "Internal Server Error" });
+    }
+  })
 app.listen(3000,()=>{
   console.log("Server is listening on port 3000.");
 })

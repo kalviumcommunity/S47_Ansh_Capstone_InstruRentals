@@ -6,7 +6,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const LandingPage = () => {
-
   const {currentUser} = useSelector((state) => state.user)
   const navigate = useNavigate()
   const handleStart = () =>{
@@ -16,6 +15,14 @@ const LandingPage = () => {
       navigate('/signin')
     }
   }
+  const handleDivs = (equipment) => {
+    if (currentUser) {
+      navigate(`/products?equipment=${equipment}`);
+    } else {
+      navigate('/signin');
+    }
+  };
+
   return (
     <div className={styles.main}>
       <NavigationBar />
@@ -91,7 +98,7 @@ const LandingPage = () => {
             Our Equipments
           </div>
           <div className={styles.eu}>
-            <div className={styles.equip}>
+            <div className={styles.equip} onClick={()=>handleDivs('acousticGuitars')}>
               <div>
                 <img src="../../public/guitar.png" alt="" />
               </div>
@@ -99,7 +106,7 @@ const LandingPage = () => {
                 Guitar
               </div>
             </div>
-            <div className={styles.equip}>
+            <div className={styles.equip} onClick={()=>handleDivs('pianos')}>
               <div>
                 <img src="../../public/piano-keyboard.png" alt="" />
               </div>
@@ -108,7 +115,7 @@ const LandingPage = () => {
               </div>
             </div>
 
-            <div className={styles.equip}>
+            <div className={styles.equip} onClick={()=>handleDivs('dynamicMics')}>
               <div>
                 <img src="../../public/mic.png" alt="" />
               </div>
@@ -116,7 +123,7 @@ const LandingPage = () => {
                 Mics
               </div>
             </div>
-            <div className={styles.equip}>
+            <div className={styles.equip} onClick={()=>handleDivs('bassAmplifiers')}>
               <div>
                 <img src="../../public/amplifier.png" alt="" />
               </div>
@@ -124,15 +131,15 @@ const LandingPage = () => {
                 Amplifiers
               </div>
             </div>
-            <div className={styles.equip}>
+            <div className={styles.equip} onClick={()=>handleDivs('effectPedals')}>
               <div>
                 <img src="../../public/equalizer.png" alt="" />
               </div>
-              <div>
+              <div>   
                 Effect Pedals
               </div>
             </div>
-            <div className={styles.equip}>
+            <div className={styles.equip} onClick={() => handleDivs('monitorSpeakers')}>
               <div>
                 <img src="../../public/speaker.png" alt="" />
               </div>

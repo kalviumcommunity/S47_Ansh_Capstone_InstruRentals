@@ -44,27 +44,7 @@ const Shop = () => {
                         </select>
                     </div>
                 </div>
-                {/* <div className={styles.selectors}>
-                    <div className={styles.options} onClick={()=>handleCategory("string")}>
-                        Guitar
-                    </div>
-                    <div className={styles.options} onClick={()=>handleCategory("keyboard")}>
-                        Piano
-                    </div>
-                    <div className={styles.options} onClick={()=>handleCategory("mics")}>
-                        Mics
-                    </div>
-                    <div className={styles.options} onClick={()=>handleCategory("speakers")}>
-                        Speakers
-                    </div>
-                    <div className={styles.options} onClick={()=>handleCategory("amplifiers")}>
-                        Amplifiers
-                    </div>
-                    <div className={styles.options} onClick={()=>handleCategory("effectPedals")}>
-                        Effect Pedals
-                    </div>
-
-                </div> */}
+                
                 <div className={styles.productsContainer}>
                     <div className={styles.products}>
                         {data[category] &&
