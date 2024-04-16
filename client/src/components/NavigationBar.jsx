@@ -15,8 +15,16 @@ const NavigationBar = () => {
                             Home
                         </Link>
                     </div>
-                    <div className={styles.l}>Client</div>
-                    <div className={styles.l}>Studios</div>
+                    <div className={styles.l}>
+                        <Link to='/shop' className={styles.homeLink}>
+                            Products
+                        </Link>
+                    </div>
+                    <div className={styles.l}>
+                        <Link to='/cart' className={styles.homeLink}>
+                            Cart
+                        </Link>
+                    </div>
                 </div>
                 {
                     !currentUser && (
@@ -46,12 +54,7 @@ const NavigationBar = () => {
                         </div>
                     )
                 }
-                {/* Cart Button */}
-                <div className={styles.cartButton}>
-                    <Link to='/cart'>
-                        <button className={styles.cartButton}>Cart</button>
-                    </Link>
-                </div>
+        
             </div>
         </div>
     );
