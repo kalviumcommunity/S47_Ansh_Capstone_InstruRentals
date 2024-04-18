@@ -109,6 +109,7 @@ export default function Profile() {
   const handleSignOut = async () => {
     try {
       navigate('/')
+      localStorage.removeItem('orders');
       dispatch(signOut())
     } catch (error) {
       console.log(error);

@@ -11,79 +11,31 @@ const Products = () => {
     const location = useLocation();
     const queryParams = new URLSearchParams(location.search);
     const equipment = queryParams.get('equipment');
-    const currency ="INR";
-    const receiptId = "qwsaql";
-    const order = ''
     const [instrument, setInstrument] = useState('pianos');
     const navigate = useNavigate()
-    const [requiredData,setRequiredData] = useState([])
+    const [requiredData,setRequiredData] = useState({})
 
-    // useEffect(() =>{
-    //     setInstrument(equipment);
-    // },[])
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //       try {
-    //         const data = await axios.get("http://localhost:3000/instruments");
-    //         setRequiredData(data.data.data)
-    //         console.log(requiredData[0].instruments)
-    //       } catch (err) {
-    //         console.log(err);
-    //       }
-    //     };
-    
-    //     fetchData();
-    //   }, []);
+    useEffect(() =>{
+        setInstrument(equipment);
+    },[])
 
-    const paymentHandler = async (e, buyPrice) => {
-        const amount = buyPrice
 
-        const res = await axios.post("http://localhost:3000/api/payment/order", { amount, currency, receipt: receiptId })
-        console.log(res)
-        var options = {
-            "key": "rzp_test_jUaTi9NhyMcCla", // Enter the Key ID generated from the Dashboard
-            amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
-            currency,
-            "name": "InstruRentals", //your business name
-            "description": "Test Transaction",
-            "image": "https://example.com/your_logo",
-            "order_id": res.data.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-            "handler": async function (response) {
-                const body = {
-                    ...response,
-                }
-
-                const validated = await axios.post("http://localhost:3000/api/payment/order/validate", body)
-                console.log(validated.data)
-            },
-            "prefill": { //We recommend using the prefill parameter to auto-fill customer's contact information, especially their phone number
-                "name": "Ansh Sharma", //your customer's name
-                "email": "ansh.sharma@gmail.com",
-
-                "contact": "9000900000"  //Provide the customer's phone number for better conversion rates 
-            },
-            "notes": {
-                "address": "Razorpay Corporate Office"
-            },
-            "theme": {
-                "color": "#3399cc"
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get("http://localhost:3000/instruments");
+                // Assuming response.data.data is an array of instruments
+                console.log(response)
+                setRequiredData(response.data.data[0].instruments);
+                console.log(requiredData)
+            } catch (error) {
+                console.log(error);
             }
         };
-        var rzp1 = new window.Razorpay(options);
-        rzp1.on('payment.failed', function (response) {
-            alert(response.error.code);
-            alert(response.error.description);
-            alert(response.error.source);
-            alert(response.error.step);
-            alert(response.error.reason);
-            alert(response.error.metadata.order_id);
-            alert(response.error.metadata.payment_id);
-        });
 
-        rzp1.open();
-        e.preventDefault();
-        console.log(response)
-    }
+        fetchData();
+    }, []);
+
 
     const handleInstrments = (instrument) => {
         setInstrument(instrument)
@@ -101,7 +53,6 @@ const Products = () => {
 
         // Optionally, you can notify the user that the item has been added to the cart
         alert('Item added to cart!');
-        navigate('/cart')
 
     };
 
@@ -130,7 +81,7 @@ const Products = () => {
             </select>
 
             <div className={styles.container}>
-                {data.instruments[instrument].map((item, index) => {
+                {requiredData[instrument] && requiredData[instrument].map((item, index) => {
                     return (
                         <div key={index} className={styles.card}>
                             <div>
