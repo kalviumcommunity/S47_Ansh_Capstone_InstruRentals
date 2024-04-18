@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-// import data from '../../assets/allProfucts.json'
+import data from '../../assets/allProfucts.json'
 import NavigationBar from '../NavigationBar';
 import styles from './products.module.css'
 import Footer from '../Footer';
@@ -18,22 +18,22 @@ const Products = () => {
     const navigate = useNavigate()
     const [requiredData,setRequiredData] = useState([])
 
-    useEffect(() =>{
-        setInstrument(equipment);
-    },[])
-    useEffect(() => {
-        const fetchData = async () => {
-          try {
-            const data = await axios.get("http://localhost:3000/instruments");
-            setRequiredData(data.data.data)
-            console.log(requiredData[0].instruments)
-          } catch (err) {
-            console.log(err);
-          }
-        };
+    // useEffect(() =>{
+    //     setInstrument(equipment);
+    // },[])
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //       try {
+    //         const data = await axios.get("http://localhost:3000/instruments");
+    //         setRequiredData(data.data.data)
+    //         console.log(requiredData[0].instruments)
+    //       } catch (err) {
+    //         console.log(err);
+    //       }
+    //     };
     
-        fetchData();
-      }, []);
+    //     fetchData();
+    //   }, []);
 
     const paymentHandler = async (e, buyPrice) => {
         const amount = buyPrice
@@ -130,7 +130,7 @@ const Products = () => {
             </select>
 
             <div className={styles.container}>
-                {requiredData.length > 0 && requiredData[0].instruments[instrument].map((item, index) => {
+                {data.instruments[instrument].map((item, index) => {
                     return (
                         <div key={index} className={styles.card}>
                             <div>

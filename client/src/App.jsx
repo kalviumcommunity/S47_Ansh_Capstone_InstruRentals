@@ -11,6 +11,7 @@ import { Suspense } from 'react';
 import Products from './components/rentals/Products';
 import Cart from './components/rentals/Cart'
 import PaymentSuccess from './components/payments/PaymentSuccess';
+import Orders from './components/rentals/Orders';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           <Route path='/products' element={<Products/>}></Route>
           <Route path='/cart' element={<Cart/>}></Route>
           <Route path="/payment-success" element={<PaymentSuccess />} />
+          <Route path='/orders' element={<Orders/>}></Route>
         </Routes>
       </Suspense>
     </>
