@@ -2,10 +2,27 @@ import React from 'react';
 import styles from './Nav.module.css';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 const NavigationBar = () => {
     const { currentUser } = useSelector((state) => state.user);
+    const navigate = useNavigate();
 
+    const handleStart = () =>{
+        if (currentUser){
+          navigate('/shop')
+        }else{
+          navigate('/signin')
+        }
+      }
+
+    const handleCart = () =>{
+        if(currentUser){
+            navigate('/cart')
+        }else{
+            navigate('/signin')
+        }
+    }
     return (
         <div className={styles.main}>
             <div className={styles.container}>
@@ -15,15 +32,11 @@ const NavigationBar = () => {
                             Home
                         </Link>
                     </div>
-                    <div className={styles.l}>
-                        <Link to='/shop' className={styles.homeLink}>
-                            Products
-                        </Link>
+                    <div className={styles.l} onClick={handleStart}>
+                        Products
                     </div>
-                    <div className={styles.l}>
-                        <Link to='/cart' className={styles.homeLink}>
-                            Cart
-                        </Link>
+                    <div className={styles.l} onClick={handleCart}>
+                        Cart
                     </div>
                 </div>
                 {
