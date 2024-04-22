@@ -10,7 +10,7 @@ const NavigationBar = () => {
 
     const handleStart = () =>{
         if (currentUser){
-          navigate('/shop')
+          navigate('/orders')
         }else{
           navigate('/signin')
         }
@@ -33,7 +33,7 @@ const NavigationBar = () => {
                         </Link>
                     </div>
                     <div className={styles.l} onClick={handleStart}>
-                        Products
+                        Orders
                     </div>
                     <div className={styles.l} onClick={handleCart}>
                         Cart
