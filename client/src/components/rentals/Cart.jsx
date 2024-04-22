@@ -4,13 +4,14 @@ import { useNavigate } from 'react-router-dom';
 import styles from './cart.module.css';
 import NavigationBar from '../NavigationBar';
 import Footer from '../Footer';
+import { useSelector } from 'react-redux';
 
 const Cart = () => {
     const [cartItems, setCartItems] = useState([]);
     const currency = "INR";
     const receiptId = "qwsaql";
     const navigate = useNavigate();
-
+    const { currentUser} = useSelector((state) => state.user);
     useEffect(() => {
         // Retrieve cart items from local storage
         const storedCart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -35,12 +36,15 @@ const Cart = () => {
 
     const handleCheckout = async () => {
         const amount = cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
+        const userId = currentUser.data._id
 
         // Call your server to create a payment order
         try {
             const res = await axios.post("http://localhost:3000/api/payment/order", { amount, currency, receipt: receiptId });
             const orderId = res.data.id;
-
+            const items = cartItems.map(item => Math.random().toString(36).substr(2, 9));
+ // Assuming each item has an '_id' field representing its ObjectId
+            const quantity = cartItems.map(item => item.quantity);
             // Redirect to the payment gateway with the order ID
             const options = {
                 "key": "rzp_test_jUaTi9NhyMcCla",
@@ -53,6 +57,14 @@ const Cart = () => {
                     // Handle payment success
                     const validated = await axios.post("http://localhost:3000/api/payment/order/validate", response);
                     console.log(validated.data);
+
+
+                    await axios.post("http://localhost:3000/api/user/orders", {
+                        userId,
+                        items,
+                        quantity,
+                        totalPrice
+                    });
                     // Optionally, you can redirect the user to a success page
                     navigate('/payment-success');
                 },
@@ -86,6 +98,9 @@ const Cart = () => {
                         {cartItems.map((item, index) => (
                             <li key={index} className={styles.product}>
                                 <div className={styles.itemDetails}>
+                                    <div className={styles.img}>
+                                        <img src={item.image} alt="" />
+                                    </div>
                                     <p className={styles.productName}>{item.productName}</p>
                                     <p className={styles.price}>Price: {item.price}</p>
                                 </div>

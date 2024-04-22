@@ -5,7 +5,7 @@
           "company": "Yamaha",
           "name": "Yamaha Grand Piano",
           "type": "Acoustic",
-          "imageLink": "../../public/shop/piano.jpg",
+          "imageLink": "https://wallpaperaccess.com/full/4933198.jpg",
           "productId": "yamahaGrandPiano001",
           "rentPrice": "₹8000/day",
           "buyNowPrice": "₹250000"
@@ -14,7 +14,7 @@
           "company": "Steinway & Sons",
           "name": "Steinway & Sons Grand Piano",
           "type": "Acoustic",
-          "imageLink": "../../public/shop/piano.jpg"    ,
+          "imageLink": "https://imgs.search.brave.com/2rsYFXICAdqrpOoY7lcHxuy3-e_PI-d5mdun1w79Mkc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/c2NobWl0dG11c2lj/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAxNy8wMy9zcGly/aW84MDAuanBn"    ,
           "productId": "steinwayGrandPiano001",
           "rentPrice": "₹10000/day",
           "buyNowPrice": "₹300000"
@@ -23,7 +23,7 @@
           "company": "Kawai",
           "name": "Kawai Upright Piano",
           "type": "Acoustic",
-          "imageLink": "../../public/shop/piano.jpg",
+          "imageLink": "https://imgs.search.brave.com/dPUCOMMGz2uMsKnxzoMFgiKzFgm49G0IWoNjK2HajSk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9rYXdh/aS5jb20uYXUvd3At/Y29udGVudC91cGxv/YWRzLzIwMTkvMTEv/bmQyMXhtYXMuanBn",
           "productId": "kawaiUprightPiano001",
           "rentPrice": "₹6000/day",
           "buyNowPrice": "₹200000"
@@ -32,7 +32,7 @@
           "company": "Roland",
           "name": "Roland Digital Piano",
           "type": "Electric",
-          "imageLink": "../../public/shop/piano.jpg",
+          "imageLink": "https://imgs.search.brave.com/9dZo9O_dLMAwzv2I0oSbkB65bbyzFJvE33CqRjBKR2Q/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/c2NobWl0dG11c2lj/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMi8wOC8xMDI3/MjBfRlAtMzBYX0JL/X0RSMl9GMS1XRUIu/anBn",
           "productId": "rolandDigitalPiano001",
           "rentPrice": "₹4000/day",
           "buyNowPrice": "₹150000"
@@ -43,7 +43,7 @@
           "company": "Yamaha",
           "name": "Yamaha Keyboard",
           "type": "Electric",
-          "imageLink": "https://example.com/yamaha_keyboard.jpg",
+          "imageLink": "https://imgs.search.brave.com/yqHUa_CgmySY4FIAko4a636ObcFdCTEgXpfExiH6Bx4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW9zLmNtcy5mdXR1/cmVjZG4ubmV0L0JY/aHhERDNhYmprU05h/M1BVa29YSGotNDgw/LTgwLmpwZw",
           "productId": "yamahaKeyboard001",
           "rentPrice": "₹2000/day",
           "buyNowPrice": "₹55000"
@@ -52,7 +52,7 @@
           "company": "Casio",
           "name": "Casio Keyboard",
           "type": "Electric",
-          "imageLink": "https://example.com/casio_keyboard.jpg",
+          "imageLink": "https://imgs.search.brave.com/nWLAITlk9jNecVWy6NveyyAahXkFAwTtqzmIDQxupCk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL1Mv/YXBsdXMtbWVkaWEv/dmMvYjhlY2NhZGYt/ZGVmZS00NGJiLTll/YzAtMTIyMzVkM2Jh/Y2VlLl9fQ1IwLDE0/MywxNjU0LDEwMjNf/UFQwX1NYOTcwX1Yx/X19fLmpwZw",
           "productId": "casioKeyboard001",
           "rentPrice": "₹1800/day",
           "buyNowPrice": "₹50000"
@@ -61,7 +61,7 @@
           "company": "Korg",
           "name": "Korg Keyboard",
           "type": "Electric",
-          "imageLink": "https://example.com/korg_keyboard.jpg",
+          "imageLink": "https://wallpaperaccess.com/full/2365530.jpg",
           "productId": "korgKeyboard001",
           "rentPrice": "₹2200/day",
           "buyNowPrice": "₹60000"
@@ -72,7 +72,7 @@
           "company": "Hammond",
           "name": "Hammond Organ",
           "type": "Electronic",
-          "imageLink": "https://example.com/hammond_organ.jpg",
+          "imageLink": "https://imgs.search.brave.com/pqiMD22WGAc6npTLsSXu561ZgjZZH-GketQkl548CFI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9kdDd2/MWk5dnlwM21mLmNs/b3VkZnJvbnQubmV0/L3N0eWxlcy9oZWFk/ZXIvczMvaW1hZ2Vs/aWJyYXJ5L3Mvc3lu/dGhzZWNyZXRzaGFt/bW9uZC1lUndta2p4/ZW1yN3VXckdyLmFH/SFI2cDVXb0JrbFBR/ZS5qcGc",
           "productId": "hammondOrgan001",
           "rentPrice": "₹5000/day",
           "buyNowPrice": "₹120000"
@@ -81,7 +81,7 @@
           "company": "Yamaha",
           "name": "Yamaha Organ",
           "type": "Electronic",
-          "imageLink": "https://example.com/yamaha_organ.jpg",
+          "imageLink": "https://imgs.search.brave.com/BL4WMGVsiy0rk9MEhrU2Y1xrGNrYBZBXKp6MKJrJuCk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9odWIu/eWFtYWhhLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMy8w/MS9pbWdfODk2MC0y/X1lhbWFoYS1ZQy1v/cmdhbnMuanBn",
           "productId": "yamahaOrgan001",
           "rentPrice": "₹4800/day",
           "buyNowPrice": "₹115000"
@@ -92,7 +92,7 @@
           "company": "Roland",
           "name": "Roland Synthesiser",
           "type": "Electronic",
-          "imageLink": "https://example.com/roland_synthesiser.jpg",
+          "imageLink": "https://imgs.search.brave.com/bQDoz0Xv8E2xC-_3RGW30bT8acY2Lndtfd6H5-0hRqw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/cm9sYW5kLmNvbS9S/b2xhbmRDb21TaXRl/L21lZGlhL3VrL2lt/YWdlcy9hcnRpY2xl/cy9TSC0xMDF3ZWIu/anBn",
           "productId": "rolandSynthesiser001",
           "rentPrice": "₹6000/day",
           "buyNowPrice": "₹150000"
@@ -101,7 +101,7 @@
           "company": "Korg",
           "name": "Korg Synthesiser",
           "type": "Electronic",
-          "imageLink": "https://example.com/korg_synthesiser.jpg",
+          "imageLink": "https://imgs.search.brave.com/CuxNTSgfC1Rnfu6obn2dPNx9Ps8SeXjYavAnZaVxsd8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjFKQUI2T0IzZ0wu/anBn",
           "productId": "korgSynthesiser001",
           "rentPrice": "₹5800/day",
           "buyNowPrice": "₹145000"
@@ -112,7 +112,7 @@
           "company": "Fender",
           "name": "Fender Electric Guitar",
           "type": "Electric",
-          "imageLink": "https://example.com/fender_electric.jpg",
+          "imageLink": "https://imgs.search.brave.com/tRIriVqTelnVdi6ptg3do9_TchAR0GWVlU6dT99hRSM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ndWl0/YXJzcGFjZS5vcmcv/d3AtY29udGVudC91/cGxvYWRzLzIwMjEv/MTIvZmVuZGVyLWd1/aXRhci5qcGc",
           "productId": "fenderElectric001",
           "rentPrice": "₹2000/day",
           "buyNowPrice": "₹47000"
@@ -121,7 +121,7 @@
           "company": "Gibson",
           "name": "Gibson Electric Guitar",
           "type": "Electric",
-          "imageLink": "https://example.com/gibson_electric.jpg",
+          "imageLink": "https://imgs.search.brave.com/Iqm9OqlgoQOzPxAo-92zg55Oh4W5U-5t9R0Lhggwiu4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbnRv/c3RyaW5ncy5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjEv/MDcvZ2lic29uLWVs/ZWN0cmljLWd1aXRh/ci5qcGc",
           "productId": "gibsonElectric001",
           "rentPrice": "₹2500/day",
           "buyNowPrice": "₹57000"
@@ -130,7 +130,7 @@
           "company": "Ibanez",
           "name": "Ibanez Electric Guitar",
           "type": "Electric",
-          "imageLink": "https://example.com/ibanez_electric.jpg",
+          "imageLink": "https://pixy.org/src2/589/thumbs190/5894945.jpg",
           "productId": "ibanezElectric001",
           "rentPrice": "₹3000/day",
           "buyNowPrice": "₹67000"
@@ -139,7 +139,7 @@
           "company": "PRS",
           "name": "PRS Electric Guitar",
           "type": "Electric",
-          "imageLink": "https://example.com/prs_electric.jpg",
+          "imageLink": "https://imgs.search.brave.com/bQO32soE5VO75X6gzBQhSuyELKKVfYS6JbSo1gg2xeQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5tdXNpY2lhbnNm/cmllbmQuY29tL2lz/L2ltYWdlL01NR1M3/L0NFLTI0LUVsZWN0/cmljLUd1aXRhci1G/YWRlZC1HcmF5LUJs/YWNrL0ozMDAyNDAw/MDAyMjAwMC0wMC00/MDB4NDAwLmpwZw",
           "productId": "prsElectric001",
           "rentPrice": "₹3500/day",
           "buyNowPrice": "₹77000"
@@ -150,7 +150,7 @@
           "company": "Fender",
           "name": "Fender Acoustic Guitar",
           "type": "Acoustic",
-          "imageLink": "https://example.com/fender_acoustic.jpg",
+          "imageLink": "https://imgs.search.brave.com/neLoDKzgWCjZm1MwtFY5m3EtypBmR5SWwmAdOUF71UY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW9zLmNtcy5mdXR1/cmVjZG4ubmV0L0hN/ckRaWVB2UGhlWXFx/Zk1MaVZoUFAtMzIw/LTgwLmpwZw",
           "productId": "fenderAcoustic001",
           "rentPrice": "₹2000/day",
           "buyNowPrice": "₹47000"
@@ -159,7 +159,7 @@
           "company": "Gibson",
           "name": "Gibson Acoustic Guitar",
           "type": "Acoustic",
-          "imageLink": "https://example.com/gibson_acoustic.jpg",
+          "imageLink": "https://imgs.search.brave.com/9RVP9A2_h6AIsqGt1qqrnmblEUBRIkHdQyxuiI1t42w/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ndWl0/YXJzcGFjZS5vcmcv/d3AtY29udGVudC91/cGxvYWRzLzIwMjIv/MDgvR2lic29uLUwt/MDAtU3RhbmRhcmQt/QWNvdXN0aWMtRWxl/Y3RyaWMtR3VpdGFy/LndlYnA",
           "productId": "gibsonAcoustic001",
           "rentPrice": "₹2500/day",
           "buyNowPrice": "₹57000"
@@ -168,7 +168,7 @@
           "company": "Taylor",
           "name": "Taylor Acoustic Guitar",
           "type": "Acoustic",
-          "imageLink": "https://example.com/taylor_acoustic.jpg",
+          "imageLink": "https://imgs.search.brave.com/MctGrlSUgnUCeL5ZbEQ8dnQ9S0k8qy103Slzuy2HmwM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuZ3VpdGFyY2Vu/dGVyLmNvbS9yaWZm/cy9iaW5hcmllcy9j/b250ZW50L2dhbGxl/cnkvZ3VpdGFyY2Vu/dGVyL2J1eWluZy1n/dWlkZXMvdGF5bG9y/LWd1aXRhcnMtYnV5/aW5nLWd1aWRlLmpw/Zw",
           "productId": "taylorAcoustic001",
           "rentPrice": "₹3000/day",
           "buyNowPrice": "₹67000"
@@ -177,7 +177,7 @@
           "company": "Martin",
           "name": "Martin Acoustic Guitar",
           "type": "Acoustic",
-          "imageLink": "https://example.com/martin_acoustic.jpg",
+          "imageLink": "https://imgs.search.brave.com/59ZFsQJ7vSGc2ffDLVHbIuTCUuqdj8g5mYRxTlbHabU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5tdXNpY2lhbnNm/cmllbmQuY29tL2lz/L2ltYWdlL01NR1M3/LzAwMC0yOC1TdGFu/ZGFyZC1BdWRpdG9y/aXVtLUFjb3VzdGlj/LUd1aXRhci1OYXR1/cmFsL0s4Njc5OTAw/MDAwMTAwMC0wMC00/MDB4NDAwLmpwZw",
           "productId": "martinAcoustic001",
           "rentPrice": "₹3500/day",
           "buyNowPrice": "₹77000"
@@ -188,7 +188,7 @@
           "company": "Stradivarius",
           "name": "Stradivarius Violin",
           "type": "Bowed",
-          "imageLink": "https://example.com/stradivarius_violin.jpg",
+          "imageLink": "https://imgs.search.brave.com/hnto5gravBD_XKDYgQ7UGKUSrzSjzkTqPGoEbySohbU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTE1/MDczMjkvcGhvdG8v/dmlvbGluLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1aNmhf/ZlNfd2h5MG5IbXc4/N1dQQV84T0hzRlY5/T1A1dUx1VENHbUU0/aWdrPQ",
           "productId": "stradivariusViolin001",
           "rentPrice": "₹5000/day",
           "buyNowPrice": "₹120000"
@@ -197,7 +197,7 @@
           "company": "Yamaha",
           "name": "Yamaha Violin",
           "type": "Bowed",
-          "imageLink": "https://example.com/yamaha_violin.jpg",
+          "imageLink": "https://imgs.search.brave.com/KwPxomdOEFQ3ivPXawg-qad_7hklHiFeCUcJJjiXzLo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/MzFUc2VWVHVsWEwu/anBn",
           "productId": "yamahaViolin001",
           "rentPrice": "₹4500/day",
           "buyNowPrice": "₹110000"
@@ -206,7 +206,7 @@
           "company": "Stentor",
           "name": "Stentor Violin",
           "type": "Bowed",
-          "imageLink": "https://example.com/stentor_violin.jpg",
+          "imageLink": "https://imgs.search.brave.com/ohSiaee5IOrDoE_v9_AF-qiyM-xUjNiUR2i_421fJwM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbnRv/c3RyaW5ncy5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjEv/MDgvYmVzdC1zdGVu/dG9yLXZpb2xpbi5q/cGc",
           "productId": "stentorViolin001",
           "rentPrice": "₹4000/day",
           "buyNowPrice": "₹95000"
@@ -215,7 +215,7 @@
           "company": "Cecilio",
           "name": "Cecilio Violin",
           "type": "Bowed",
-          "imageLink": "https://example.com/cecilio_violin.jpg",
+          "imageLink": "https://imgs.search.brave.com/bkc6ApiBbGTdl3Bhy3VOAHaREZTE0OarVKwtcBvLEwU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/c3RyaW5nc2tpbmdz/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMi8wMy9DZWNp/bGlvLUNWTkFFLUFj/b3VzdGljLUVsZWN0/cmljLVZpb2xpbi1p/bi1QZWFybC1XaGl0/ZTEuanBn",
           "productId": "cecilioViolin001",
           "rentPrice": "₹4800/day",
           "buyNowPrice": "₹115000"
@@ -226,7 +226,7 @@
           "company": "Yamaha",
           "name": "Yamaha Cello",
           "type": "Bowed",
-          "imageLink": "https://example.com/yamaha_cello.jpg",
+          "imageLink": "https://imgs.search.brave.com/fIu0Yuhzv7dzQxt5C3xJiU4n4osRB6zFFdilFwY84G0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5tdXNpY2lhbnNm/cmllbmQuY29tL2lz/L2ltYWdlL01NR1M3/L0ludGVybWVkaWF0/ZS1Nb2RlbC1BVkM3/LWNlbGxvLW91dGZp/dC00LTQtU2l6ZS80/NzQ3MTIwMDAwMDAw/NDgtMDAtNDAweDQw/MC5qcGc",
           "productId": "yamahaCello001",
           "rentPrice": "₹3000/day",
           "buyNowPrice": "₹75000"
@@ -235,7 +235,7 @@
           "company": "Stentor",
           "name": "Stentor Cello",
           "type": "Bowed",
-          "imageLink": "https://example.com/stentor_cello.jpg",
+          "imageLink": "https://imgs.search.brave.com/tRe_3GhrirTnX_JcmA89gUxHzGXoiacbyR3jvEVVC78/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGxpZ2h0c3Bl/ZWQuY29tL3Nob3Bz/LzYxOTgyNS9maWxl/cy81NDA5NDk2NC8z/MzB4MzMweDIvY2Vs/bG8tc3RlbnRvci1p/LXN0dWRlbnQta2l0/LmpwZw",
           "productId": "stentorCello001",
           "rentPrice": "₹2800/day",
           "buyNowPrice": "₹70000"
@@ -244,7 +244,7 @@
           "company": "Cecilio",
           "name": "Cecilio Cello",
           "type": "Bowed",
-          "imageLink": "https://example.com/cecilio_cello.jpg",
+          "imageLink": "https://imgs.search.brave.com/edExp90VIrWS4kUCQcDld-h7a-9-dWSwrWOQXxhXwDI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9vcmNo/ZXN0cmFlbnNlbWJs/ZS5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjIvMDMvOWE1/ZTIzNmMtMzQ0OC00/ZGRhLThhOTgtZWJl/MWUyMTdkZjM4XzEu/MTU4ZTVkYjIwZDI0/ZjNiYzRlYTc4NjEy/YTY5MDZlNDYuanBn",
           "productId": "cecilioCello001",
           "rentPrice": "₹3200/day",
           "buyNowPrice": "₹80000"
@@ -255,7 +255,7 @@
           "company": "Shure",
           "name": "Shure SM58 Dynamic Microphone",
           "type": "Dynamic",
-          "imageLink": "https://example.com/shure_sm58.jpg",
+          "imageLink": "https://imgs.search.brave.com/7hWftNbF9TFdlpFJ2t7AUPvMujMktfTHG8hwWyjjtp4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuZ3VpdGFyY2Vu/dGVyLmNvbS9zdGF0/aWMvZ2MvZW5oYW5j/ZS1wZHAvU2h1cmUv/U2h1cmUtU001OC1I/YW5kaGVsZC1EeW5h/bWljLU1pY3JvcGhv/bmUuanBn",
           "productId": "shureSM58Dynamic001",
           "rentPrice": "₹1000/day",
           "buyNowPrice": "₹30000"
@@ -264,7 +264,7 @@
           "company": "Sennheiser",
           "name": "Sennheiser e835 Dynamic Microphone",
           "type": "Dynamic",
-          "imageLink": "https://example.com/sennheiser_e835.jpg",
+          "imageLink": "https://imgs.search.brave.com/WtHJWT3iN-Dgzrdq_plDupShCOLaozP4UjG0_U8houw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jb2xs/YWJvcmF0ZXdvcnNo/aXAuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDEyLzAxL3Nl/bm5oZWlzZXIxLmpw/Zw",
           "productId": "sennheiserE835Dynamic001",
           "rentPrice": "₹1200/day",
           "buyNowPrice": "₹35000"
@@ -275,7 +275,7 @@
           "company": "Audio-Technica",
           "name": "Audio-Technica AT2020 Condenser Microphone",
           "type": "Condenser",
-          "imageLink": "https://example.com/audio_technica_at2020.jpg",
+          "imageLink": "https://imgs.search.brave.com/xWpGrEcSba5NS3tdWmzdezo4auHpNWXbjxf4XZXK4Ew/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFmRnoyWGpBTUwu/anBn",
           "productId": "audioTechnicaAT2020Condenser001",
           "rentPrice": "₹1500/day",
           "buyNowPrice": "₹40000"
@@ -284,7 +284,7 @@
           "company": "Rode",
           "name": "Rode NT1-A Condenser Microphone",
           "type": "Condenser",
-          "imageLink": "https://example.com/rode_nt1a.jpg",
+          "imageLink": "https://imgs.search.brave.com/KEvMj-CmhBQMaFNLdxCtcuOPX2sM2H9EiLehkkz6gxo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9hdmNz/dG9yZS5jb20vY2Ru/L3Nob3AvcHJvZHVj/dHMvOTYyMDBiNzRh/YzQzN2RjNjJiZTM3/ODUzYjhhOTU4MWEu/anBnP2Nyb3A9Y2Vu/dGVyJmhlaWdodD0y/MDQ4JnY9MTcwMzAz/NDUzMSZ3aWR0aD0y/MDQ4",
           "productId": "rodeNT1ACondenser001",
           "rentPrice": "₹1800/day",
           "buyNowPrice": "₹45000"
@@ -295,7 +295,7 @@
           "company": "Shure",
           "name": "Shure BLX24/SM58 Wireless Microphone System",
           "type": "Wireless",
-          "imageLink": "https://example.com/shure_blx24_sm58.jpg",
+          "imageLink": "https://imgs.search.brave.com/6lKBjhtQcV48YN2OgEHl_XrlUwiQxTKKWg1ZQvKtyyk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4x/MS5iaWdjb21tZXJj/ZS5jb20vcy1tbWZm/dTRzZzZhL2ltYWdl/cy9zdGVuY2lsLzUw/MHg2NTkvcHJvZHVj/dHMvNzcyOS80Mzc3/NS8yODgzN19fNDU2/MzUuMTY0NTE5NjYz/Ny5qcGc_Yz0x",
           "productId": "shureBLX24SM58Wireless001",
           "rentPrice": "₹2500/day",
           "buyNowPrice": "₹60000"
@@ -304,7 +304,7 @@
           "company": "Sennheiser",
           "name": "Sennheiser EW 100 G3 Wireless Microphone System",
           "type": "Wireless",
-          "imageLink": "https://example.com/sennheiser_ew100g3.jpg",
+          "imageLink": "https://imgs.search.brave.com/IGmO9QjECE_ZZytNdQr6BBJADEEWcmofpCGx-O5nS38/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc3F1YXJlc3Bh/Y2UtY2RuLmNvbS9j/b250ZW50L3YxLzVj/YmU2YWZkYjkxNDQ5/NjYxMzZlYWU2ZC8x/NTkwNjQyNjU2Nzkz/LUJWRTcxN085Vkc3/WVJNNkdYTjVYL1Nl/bm5oZWlzZXIrRVcr/MTAwLUVORytHMytX/aXJlbGVzcytNS0Ut/MitHT0xEK0xhcGVs/K0tpdCtIaXJlLmpw/Zw",
           "productId": "sennheiserEW100G3Wireless001",
           "rentPrice": "₹2800/day",
           "buyNowPrice": "₹65000"
@@ -315,7 +315,7 @@
           "company": "Ampeg",
           "name": "Ampeg BA-210 V2 Bass Combo Amplifier",
           "type": "Bass",
-          "imageLink": "https://example.com/ampeg_ba210v2.jpg",
+          "imageLink": "https://imgs.search.brave.com/qpAkmvEtzj4z5JVbA-a3VqQrKxZi0LoWHmB-sTkn6x8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9kMWFl/cmkzdHkzaXpucy5j/bG91ZGZyb250Lm5l/dC9tZWRpYS8xOC8x/ODMzMTAvNjAwL3By/ZXZpZXcuanBn",
           "productId": "ampegBA210V2Bass001",
           "rentPrice": "₹4000/day",
           "buyNowPrice": "₹100000"
@@ -324,7 +324,7 @@
           "company": "Fender",
           "name": "Fender Rumble 500 Bass Combo Amplifier",
           "type": "Bass",
-          "imageLink": "https://example.com/fender_rumble500.jpg",
+          "imageLink": "https://imgs.search.brave.com/VHnX1zJ2GDYO_2-1iC1vspEDPlNoidk-cvWa3EHdF8M/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/YmFzc2NlbnRyZS5j/b20uYXUvY2RuL3No/b3AvcHJvZHVjdHMv/cnVtYmxlXzUwMF8z/MDB4LmpwZz92PTE2/MjMwMjg2NzU",
           "productId": "fenderRumble500Bass001",
           "rentPrice": "₹3500/day",
           "buyNowPrice": "₹95000"
@@ -335,7 +335,7 @@
           "company": "Marshall",
           "name": "Marshall DSL40CR Guitar Combo Amplifier",
           "type": "Guitar",
-          "imageLink": "https://example.com/marshall_dsl40cr.jpg",
+          "imageLink": "https://imgs.search.brave.com/V_2bD2ebE5oq6zyeQ-kJQ2ILM1N3DhMslOda-lcpstI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzIx/MTgvNzI3NS9wcm9k/dWN0cy9DT0RFMjUt/Mi16b29tXzgwMHgu/anBnP3Y9MTU0MTkw/OTY5OQ",
           "productId": "marshallDSL40CRGuitar001",
           "rentPrice": "₹3000/day",
           "buyNowPrice": "₹85000"
@@ -344,7 +344,7 @@
           "company": "Fender",
           "name": "Fender Hot Rod Deluxe IV Guitar Combo Amplifier",
           "type": "Guitar",
-          "imageLink": "https://example.com/fender_hotrod_deluxe.jpg",
+          "imageLink": "https://imgs.search.brave.com/_TJMm5YeGc5AfpDl8QLKswD3Z0ws8c545_teN21B7fw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZjEu/enpvdW5kcy5jb20v/bWVkaWEvcHJvZHVj/dG1lZGlhL2ZpdCwy/MDE4YnkzMjAwL3F1/YWxpdHksODUvMjIz/MTIwMDA1Ml9hbXBf/ZHRsXzAwMV9uci05/ZmE1MWM4YWY0ODEx/N2Y5NzgyMWUxMGY0/ZmUzOTIyOS5qcGc",
           "productId": "fenderHotRodDeluxeGuitar001",
           "rentPrice": "₹2800/day",
           "buyNowPrice": "₹80000"
@@ -355,7 +355,7 @@
           "company": "JBL",
           "name": "JBL EON615 Portable PA Speaker",
           "type": "PA",
-          "imageLink": "https://example.com/jbl_eon615.jpg",
+          "imageLink": "https://imgs.search.brave.com/k2ATmohJ00jYDho48CsP67L_Bwb_Ps7EmLAIcTZXjQc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5yYWlucG9zLmNv/bS81NzMwL2VvbjYx/NV9kdW9fci5qcGc",
           "productId": "jblEON615PASpeaker001",
           "rentPrice": "₹5000/day",
           "buyNowPrice": "₹120000"
@@ -364,7 +364,7 @@
           "company": "QSC",
           "name": "QSC K12.2 Active PA Speaker",
           "type": "PA",
-          "imageLink": "https://example.com/qsc_k12_2.jpg",
+          "imageLink": "https://imgs.search.brave.com/VMJL5U1ABUKqC8mALupLGDwhDmMC1ZTSQdUn9KAN2bQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9kMWFl/cmkzdHkzaXpucy5j/bG91ZGZyb250Lm5l/dC9tZWRpYS8yNi8y/NjUxNzIvNjAwL3By/ZXZpZXcuanBn",
           "productId": "qscK12_2PASpeaker001",
           "rentPrice": "₹5500/day",
           "buyNowPrice": "₹130000"
@@ -375,7 +375,7 @@
           "company": "Yamaha",
           "name": "Yamaha HS8 Studio Monitor",
           "type": "Monitor",
-          "imageLink": "https://example.com/yamaha_hs8.jpg",
+          "imageLink": "https://imgs.search.brave.com/EEs4nDLTgX025Di6y-sEPumcyDg678fYf_2m6RbAwds/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5ndWl0YXJjZW50/ZXIuY29tL2lzL2lt/YWdlL01NR1M3L0g5/NjIyNTAwMDAwMDAw/MC0wMC02MDB4NjAw/LmpwZw",
           "productId": "yamahaHS8Monitor001",
           "rentPrice": "₹3000/day",
           "buyNowPrice": "₹80000"
@@ -384,7 +384,7 @@
           "company": "KRK",
           "name": "KRK Rokit 5 G4 Studio Monitor",
           "type": "Monitor",
-          "imageLink": "https://example.com/krk_rokit5_g4.jpg",
+          "imageLink": "https://imgs.search.brave.com/wA20p47aeaS2207JzA8pN8rghAGvhozb4dmxlVXd1iw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/aW1wdWxzZW11c2lj/Y28uY29tL2Nkbi9z/aG9wL3Byb2R1Y3Rz/L2tyay1yb2tpdC01/LWc0LXBvd2VyZWQt/c3R1ZGlvLW1vbml0/b3JzLWltcHVsc2Ut/bXVzaWMtY28tLTMw/NDYzMzU2NDAzOTMw/LmpwZz92PTE2OTU4/ODcyOTUmd2lkdGg9/MzMwNg",
           "productId": "krkRokit5G4Monitor001",
           "rentPrice": "₹2800/day",
           "buyNowPrice": "₹75000"
@@ -395,7 +395,7 @@
           "company": "Boss",
           "name": "Boss DS-1 Distortion Pedal",
           "type": "Effect Pedal",
-          "imageLink": "https://example.com/boss_ds1.jpg",
+          "imageLink": "https://imgs.search.brave.com/sTmqfn4BQvOod__FEWJ3fnr5YzpuLI8NyaQ3r7ljW9U/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW9zLmNtcy5mdXR1/cmVjZG4ubmV0L3Z5/ZXlVS0hnY2FCeTlB/R2JlVGFDR0UtNDgw/LTgwLmpwZw",
           "productId": "bossDS1DistortionPedal001",
           "rentPrice": "₹800/day",
           "buyNowPrice": "₹20000"
@@ -404,7 +404,7 @@
           "company": "TC Electronic",
           "name": "TC Electronic Hall of Fame 2 Reverb Pedal",
           "type": "Effect Pedal",
-          "imageLink": "https://example.com/tc_electronic_hall_of_fame2.jpg",
+          "imageLink": "https://imgs.search.brave.com/l0tAb8R2M7NiNj5wThvPfs-ugOweyHDNMqc-YdbAN7Y/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW9zLmNtcy5mdXR1/cmVjZG4ubmV0L0NK/ZFhvamN1eTZTQU5w/amU2a3ZnTlktMzIw/LTgwLmpwZw",
           "productId": "tcElectronicHallOfFame2ReverbPedal001",
           "rentPrice": "₹1000/day",
           "buyNowPrice": "₹25000"
