@@ -40,11 +40,11 @@ const Products = () => {
         setInstrument(instrument)
     }
 
-    const handleAddToCart = (id,image,productName, price) => {
+    const handleAddToCart = (id,image,productName, price,type) => {
         const existingCartItems = JSON.parse(localStorage.getItem('cart')) || [];
 
         // Add the new item to the cart
-        const newItem = {id,image, productName, price, quantity: 1 };
+        const newItem = {id,image, productName, price, quantity: 1 ,type:type};
         const updatedCartItems = [...existingCartItems, newItem];
 
         // Update local storage with the updated cart items
@@ -98,12 +98,12 @@ const Products = () => {
                                 <p className={styles.prices}>Buy now Price :<span className={styles.p}>{item.buyNowPrice}</span></p>
                                 <div className={styles.buttons}>
                                     <div className={styles.buttons}>
-                                        <button onClick={() => handleAddToCart(item.productId,item.name, parseFloat(item.rentPrice.replace(/[^\d.]/g, '')))}>
+                                        <button onClick={() => handleAddToCart(item.productId,item.imageLink,item.name, parseFloat(item.rentPrice.replace(/^\D+/g, '')),'Renting')}>
                                             Rent Now
                                         </button>
                                     </div>
                                     <div className={styles.buttons}>
-                                        <button onClick={() => handleAddToCart(item.productId,item.imageLink,item.name, parseFloat(item.buyNowPrice.replace(/[^\d.]/g, '')))}>Add to Cart</button>
+                                        <button onClick={() => handleAddToCart(item.productId,item.imageLink,item.name, parseFloat(item.buyNowPrice.replace(/[^\d.]/g, '')),'Purchase')}>Add to Cart</button>
                                     </div>
                                 </div>
                             </div>

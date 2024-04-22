@@ -92,3 +92,103 @@
     align-items: center;
 }
 
+@media screen and (max-width: 768px){
+    .container6{
+        background-color: black;
+        height: 87vh;
+        padding-left: 6vh;
+        padding-right: 6vh;
+        padding-top: 6vh;
+    } 
+    
+    .l:hover{
+        cursor: pointer;
+    }
+    
+    .footerUp{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: space-between;
+        height: 70vh;
+        margin-bottom: 2vh;
+    }
+    .company{
+        font-size: 4vh;
+    }
+    .links img{
+        height: 3vh;
+    }
+    .links{
+        display: flex;
+        justify-content: space-between;
+        width: 30vh;
+    }
+    .links img:hover{
+        cursor: pointer;
+    }
+    
+    .leftFooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 30vh;
+    }
+    
+    .rightFooter{
+        text-align: left;
+        width: 40%;
+        font-size: 3vh;
+    }
+    
+    .newsletter{
+        margin-top: 2vh;
+    }
+    .rightFooter input{
+        background-color: transparent;
+        width: 30vh;
+        height: 5vh;
+        padding-left: 1vh;
+        color: white;
+        border: 2px solid #666666;
+    }
+    .rightFooter button{
+        border: 2px solid #666666;
+        background-color: transparent;
+        color: white;
+        width: 20vh;
+        height: 5.4vh;
+    }
+    .blue{
+        color: #19AEA4;
+    }
+    
+    hr{
+        display: none;
+    }
+    
+    .footerDown{
+        height: 10vh;
+        color: white    ;
+        font-size: 1.9vh;
+    }
+    .li{
+        display: flex;
+        padding-top: 2vh;
+    }
+    .f:hover{
+        color: white;
+        cursor: pointer;
+    }
+    .f{
+        color: gray;
+        display: flex;
+        padding-right: 2vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        height: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
