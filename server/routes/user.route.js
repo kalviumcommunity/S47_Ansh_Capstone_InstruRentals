@@ -9,9 +9,9 @@ import { createOrder } from "../controllers/order.controller.js";
 
 const router = express.Router();
 
-router.get('/',test);
-router.put('/update/:id', verifyToken, updateUser);
-router.delete('/delete/:id', verifyToken, deleteUser);
+router.get('/a',test);
+router.put('/update/:id',updateUser);
+router.delete('/delete/:id', deleteUser);
 router.post('/orders', createOrder)
 
 export default router;

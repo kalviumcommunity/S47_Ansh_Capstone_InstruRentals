@@ -11,7 +11,7 @@ import payRoutes from './routes/payment.route.js'
 import Instrument from './models/instrument.model.js';
 dotenv.config()
 app.use(express.json());
-app.use(cors());
+app.use(cors())
 app.use(cookieParser());
 app.use(express.urlencoded({extended:false}));
 const uri = process.env.URI;

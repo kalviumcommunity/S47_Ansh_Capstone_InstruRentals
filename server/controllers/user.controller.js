@@ -11,7 +11,8 @@ export const test = (req, res) => {
 // update user
 
 export const updateUser = async (req, res, next) => {
-  if (req.user.id !== req.params.id) {
+  console.log(req.body)
+  if (req.body.id !== req.params.id) {
     return next(errorHandler(401, 'You can update only your account!'));
   }
   try {
@@ -43,7 +44,8 @@ export const updateUser = async (req, res, next) => {
 
 
 export const deleteUser = async (req, res, next) => {
-  if (req.user.id !== req.params.id) {
+  console.log(req.body._id)
+  if (req.body._id !== req.params.id) {
     return next(errorHandler(401, 'You can delete only your account!'));
   }
   try {
