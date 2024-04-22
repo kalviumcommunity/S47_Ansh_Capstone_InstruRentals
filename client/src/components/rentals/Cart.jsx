@@ -42,7 +42,7 @@ const Cart = () => {
         try {
             const res = await axios.post("http://localhost:3000/api/payment/order", { amount, currency, receipt: receiptId });
             const orderId = res.data.id;
-            const items = cartItems.map(item => Math.random().toString(36).substr(2, 9));
+            const items = cartItems.map(item => Math.random().toString(36).substr(2, 9));   
  // Assuming each item has an '_id' field representing its ObjectId
             const quantity = cartItems.map(item => item.quantity);
             // Redirect to the payment gateway with the order ID
@@ -103,6 +103,9 @@ const Cart = () => {
                                     </div>
                                     <p className={styles.productName}>{item.productName}</p>
                                     <p className={styles.price}>Price: {item.price}</p>
+                                    <div>
+                                        {item.type}
+                                    </div>
                                 </div>
                                 <div className={styles.quantityControls}>
                                     <button className={styles.quantityButton} onClick={() => updateQuantity(index, item.quantity - 1)}>-</button>

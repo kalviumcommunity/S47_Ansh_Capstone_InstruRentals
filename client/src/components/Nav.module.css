@@ -69,3 +69,36 @@
     color: white;
     text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+    .container{
+        display: flex;
+        height: 6vh;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        width: 150vh;
+        margin-top: 1vh;
+    }
+    
+    .l{
+        width: 1vh;
+        padding: 1vh;
+        border-bottom: 1px solid transparent;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+    }
+    
+    .navs{
+        display: flex;
+        
+    }
+
+}
