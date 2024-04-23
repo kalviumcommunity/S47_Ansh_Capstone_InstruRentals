@@ -142,3 +142,135 @@ select {
     display: flex;
     justify-content: center ;
 }
+@media screen and (max-width: 768px){
+ 
+    .main {
+        font-family: "Poppins", sans-serif;
+    }
+    
+    .container1 {
+        background-image: url('../../../public/shop-back3.jpg');
+        background-color: rgba(0, 0, 0, 0.3);
+        background-blend-mode: darken;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .product img {
+        height: 200px;
+        width: 300px;
+        border-radius: 3vh;
+        border: 1px solid white;
+    }
+    .product{
+        width: 100%;
+    }
+    .product:nth-child(even) {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    
+    .product:nth-child(odd) {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    
+    }
+    
+ 
+    
+    select {
+        padding: 1vh;
+        outline: none;
+        height: 4.5vh;
+        border-radius: 0.5vh;
+    }
+    
+    
+    
+    .nothing {
+        height: 30vh;
+        color: white;
+        font-size: 5vh;
+        margin-left: 4vh;
+        margin-top: 4vh;
+    }
+    
+    .select {
+        color: white;
+    }
+    
+    .itemName {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 52vh;
+        height: 52vh;
+        border: 1px solid white;
+        border-radius: 3vh;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .product {
+        justify-content: space-around;
+        align-items: center;
+        padding: 2vh;
+        margin-bottom: 2vh;
+    }
+  
+    
+    .buttons button {
+        padding: 1vh;
+        width: 100vh;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+    .nameOfItem{
+        font-size: 3vh;
+        width: 35vh;
+        color: #19AEA4;
+        font-weight: 600;
+    }
+    .descrpitionOfItem{
+        font-size: 2vh;
+        width: 35vh;
+    }
+    
+    .white button {
+        background-color: white;
+    }
+    
+    .selectors{
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        height: 10vh;
+        align-items:center;
+    }
+    .options{
+        border: 1px solid white;
+    }
+    
+    .buttons {
+        width: 35vh;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5vh;
+    }
+    .productsContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .outerDrop{
+        margin: 2vh;
+        display: flex;
+        justify-content: center ;
+    }
+}

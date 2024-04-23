@@ -32,7 +32,7 @@ export default function Profile() {
   const [updateSuccess, setUpdateSuccess] = useState(false);
   const navigate = useNavigate()
   const { currentUser, loading, error } = useSelector((state) => state.user);
-  console.log(currentUser);
+  console.log(currentUser.data._id);
   useEffect(() => {
     if (image) {
       handleFileUpload(image);
@@ -76,7 +76,7 @@ export default function Profile() {
       //   body: JSON.stringify(formData),
       // });
       // const data = await res.json();
-      const data = await axios.put(`http://localhost:3000/api/user/update/${currentUser.data.user._id}`, formData)
+      const data = await axios.put('http://localhost:3000/api/user/update/' + currentUser.data._id, {...formData,id:currentUser.data._id})
       if (data.success === false) {
         dispatch(updateUserFailure(data));
         return;
@@ -90,21 +90,25 @@ export default function Profile() {
 
   const handleDeleteAccount = async () => {
     try {
-      dispatch(deleteUserStart());
-      // const res = await fetch(`/api/user/delete/${currentUser._id}`, {
-      //   method: 'DELETE',
-      // });
-      // const data = await res.json();
-      const data = await axios.delete(`http://localhost:3000/api/user/delete/${currentUser.data.user._id}`)
-      if (data.success === false) {
-        dispatch(deleteUserFailure(data));
-        return;
-      }
-      dispatch(deleteUserSuccess(data));
+        dispatch(deleteUserStart());
+
+        if (!currentUser || !currentUser.data || !currentUser.data._id) {
+            console.log('sdnk')
+            throw new Error("User ID not available");
+        }
+
+        const response = await axios.delete('http://localhost:3000/api/user/delete/' + currentUser.data._id,currentUser);
+
+        if (response.success === false) {
+            console.log('sds')
+            dispatch(deleteUserFailure(response.data));
+            return;
+        }
+        dispatch(deleteUserSuccess(response.data));
     } catch (error) {
-      dispatch(deleteUserFailure(error));
+        dispatch(deleteUserFailure(error.message));
     }
-  };
+};
 
   const handleSignOut = async () => {
     try {
