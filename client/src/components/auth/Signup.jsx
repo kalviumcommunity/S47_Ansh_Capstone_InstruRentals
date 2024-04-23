@@ -26,7 +26,7 @@ export default function SignUp() {
       //   body: JSON.stringify(formData),
       // });
       // const data = await res.json();
-      const data = await axios.post('https://s47-ansh-capstone-instrurentals-2.onrender.com/api/auth/signup',formData)
+      const data = await axios.post('https://s47-ansh-capstone-instrurentals-3.onrender.com/api/auth/signup',formData)
       console.log(data);
       setLoading(false);
       if (data.success === false) {
