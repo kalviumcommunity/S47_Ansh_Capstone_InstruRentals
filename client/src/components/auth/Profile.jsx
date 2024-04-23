@@ -76,7 +76,7 @@ export default function Profile() {
       //   body: JSON.stringify(formData),
       // });
       // const data = await res.json();
-      const data = await axios.put('http://localhost:3000/api/user/update/' + currentUser.data._id, {...formData,id:currentUser.data._id})
+      const data = await axios.put('https://s47-ansh-capstone-instrurentals-1.onrender.com/api/user/update/' + currentUser.data._id, {...formData,id:currentUser.data._id})
       if (data.success === false) {
         dispatch(updateUserFailure(data));
         return;
@@ -97,7 +97,7 @@ export default function Profile() {
             throw new Error("User ID not available");
         }
 
-        const response = await axios.delete('http://localhost:3000/api/user/delete/' + currentUser.data._id,currentUser);
+        const response = await axios.delete('https://s47-ansh-capstone-instrurentals-1.onrender.com/api/user/delete/' + currentUser.data._id,currentUser);
 
         if (response.success === false) {
             console.log('sds')
@@ -113,8 +113,8 @@ export default function Profile() {
   const handleSignOut = async () => {
     try {
       navigate('/')
-      localStorage.removeItem('orders');
       dispatch(signOut())
+      localStorage.removeItem('orders');
     } catch (error) {
       console.log(error);
     }

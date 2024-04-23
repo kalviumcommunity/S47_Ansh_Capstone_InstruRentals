@@ -27,7 +27,7 @@ const OAuth = () => {
             //     })
             // })
             // const data = await res.json();
-            const data = await axios.post('http://localhost:3000/api/auth/google',{
+            const data = await axios.post('https://s47-ansh-capstone-instrurentals-1.onrender.com/api/auth/google',{
                 name : result.user.displayName,
                 email : result.user.email
             })
