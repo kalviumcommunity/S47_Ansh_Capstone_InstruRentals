@@ -4,6 +4,13 @@ import styles from "./landing.module.css";
 import Footer from "./Footer";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import whiteLogo from '../../public/instrurentals-high-resolution-logo-white-transparent.png' 
+import guitarCap from "../../public/guitar.png"
+import pianoCap from '../../public/piano-keyboard.png'
+import micCap from '../../public/mic.png'
+import ampCap from '../../public/amplifier.png'
+import eqCap from '../../public/equalizer.png'
+import spCap from '../../public/speaker.png'
 
 const LandingPage = () => {
   const {currentUser} = useSelector((state) => state.user)
@@ -32,7 +39,7 @@ const LandingPage = () => {
       <div className={styles.container1}>
         <div className={styles.left}>
           <img
-            src="../../public/instrurentals-high-resolution-logo-white-transparent.png"
+            src={whiteLogo}
             alt=""
           />
         </div>
@@ -100,7 +107,7 @@ const LandingPage = () => {
           <div className={styles.eu}>
             <div className={styles.equip} onClick={()=>handleDivs('acousticGuitars')}>
               <div>
-                <img src="../../public/guitar.png" alt="" />
+                <img src={guitarCap} alt="" />
               </div>
               <div>
                 Guitar
@@ -108,7 +115,7 @@ const LandingPage = () => {
             </div>
             <div className={styles.equip} onClick={()=>handleDivs('pianos')}>
               <div>
-                <img src="../../public/piano-keyboard.png" alt="" />
+                <img src={pianoCap} alt="" />
               </div>
               <div>
                 Piano
@@ -117,7 +124,7 @@ const LandingPage = () => {
 
             <div className={styles.equip} onClick={()=>handleDivs('dynamicMics')}>
               <div>
-                <img src="../../public/mic.png" alt="" />
+                <img src={micCap} alt="" />
               </div>
               <div>
                 Mics
@@ -125,7 +132,7 @@ const LandingPage = () => {
             </div>
             <div className={styles.equip} onClick={()=>handleDivs('bassAmplifiers')}>
               <div>
-                <img src="../../public/amplifier.png" alt="" />
+                <img src={ampCap} alt="" />
               </div>
               <div>
                 Amplifiers
@@ -133,7 +140,7 @@ const LandingPage = () => {
             </div>
             <div className={styles.equip} onClick={()=>handleDivs('effectPedals')}>
               <div>
-                <img src="../../public/equalizer.png" alt="" />
+                <img src={eqCap} alt="" />
               </div>
               <div>   
                 Effect Pedals
@@ -141,7 +148,7 @@ const LandingPage = () => {
             </div>
             <div className={styles.equip} onClick={() => handleDivs('monitorSpeakers')}>
               <div>
-                <img src="../../public/speaker.png" alt="" />
+                <img src={spCap} alt="" />
               </div>
               <div>
                 Speakers

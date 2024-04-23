@@ -22,7 +22,7 @@ const Products = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("http://localhost:3000/instruments");
+                const response = await axios.get("https://s47-ansh-capstone-instrurentals-1.onrender.com/instruments");
                 // Assuming response.data.data is an array of instruments
                 console.log(response)
                 setRequiredData(response.data.data[0].instruments);

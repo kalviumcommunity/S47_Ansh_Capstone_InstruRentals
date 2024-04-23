@@ -40,7 +40,7 @@ const Cart = () => {
 
         // Call your server to create a payment order
         try {
-            const res = await axios.post("http://localhost:3000/api/payment/order", { amount, currency, receipt: receiptId });
+            const res = await axios.post("https://s47-ansh-capstone-instrurentals-1.onrender.com/api/payment/order", { amount, currency, receipt: receiptId });
             const orderId = res.data.id;
             const items = cartItems.map(item => Math.random().toString(36).substr(2, 9));   
  // Assuming each item has an '_id' field representing its ObjectId
@@ -55,11 +55,11 @@ const Cart = () => {
                 "order_id": orderId,
                 "handler": async function (response) {
                     // Handle payment success
-                    const validated = await axios.post("http://localhost:3000/api/payment/order/validate", response);
+                    const validated = await axios.post("https://s47-ansh-capstone-instrurentals-1.onrender.com/api/payment/order/validate", response);
                     console.log(validated.data);
 
 
-                    await axios.post("http://localhost:3000/api/user/orders", {
+                    await axios.post("https://s47-ansh-capstone-instrurentals-1.onrender.com/api/user/orders", {
                         userId,
                         items,
                         quantity,

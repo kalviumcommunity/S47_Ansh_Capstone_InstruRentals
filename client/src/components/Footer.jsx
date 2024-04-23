@@ -1,5 +1,10 @@
 import React from 'react'
 import styles from './footer.module.css'
+import face from '../../public/facebook.png'
+import pin from '../../public/pinterest.png'
+import yout from '../../public/youtube.png'
+import twit from '../../public/twitter.png'
+import insta from '../../public/instagram.png'
 
 const Footer = () => {
     return (
@@ -19,11 +24,11 @@ const Footer = () => {
                         Privacy Policy
                     </div>
                     <div className={styles.links}>
-                        <div><img src="../../public/facebook.png" alt="" /></div>
-                        <div><img src="../../public/instagram.png" alt="" /></div>
-                        <div><img src="../../public/twitter.png" alt="" /></div>
-                        <div><img src="../../public/youtube.png" alt="" /></div>
-                        <div><img src="../../public/pinterest.png" alt="" /></div>
+                        <div><img src={face} alt="" /></div>
+                        <div><img src={insta} alt="" /></div>
+                        <div><img src={twit} alt="" /></div>
+                        <div><img src={yout} alt="" /></div>
+                        <div><img src={pin} alt="" /></div>
                     </div>
                 </div>
                 <div className={styles.rightFooter}>
