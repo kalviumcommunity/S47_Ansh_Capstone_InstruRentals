@@ -25,14 +25,6 @@ export default function Signin() {
     e.preventDefault();
     try {
       dispatch(signInStart());
-      // const res = await fetch('/api/auth/signin', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify(formData),
-      // });
-      // const data = await res.json();
       const data = await axios.post("https://s47-ansh-capstone-instrurentals-3.onrender.com/api/auth/signin",formData,{
         headers:{
           'Authorization': `Bearer ${localStorage.getItem('access_token')}`}

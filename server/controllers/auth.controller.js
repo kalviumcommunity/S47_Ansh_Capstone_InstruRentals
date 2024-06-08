@@ -5,11 +5,16 @@ import jwt from 'jsonwebtoken'
 import dotenv from 'dotenv'
 dotenv.config();
 
+const allowedOrigins = [
+  'https://transcendent-longma-9027bc.netlify.app',
+  'http://localhost:5173/api/auth/signup'
+];
+
 export const signup = async (req,res,next) =>{
     const {username, email ,password} = req.body;
     const hashedPassword = bcryptjs.hashSync(password,10);
     const newUser = new User({username,email,password:hashedPassword});
-    res.setHeader('Access-Control-Allow-Origin', 'https://transcendent-longma-9027bc.netlify.app/');
+    res.setHeader('Access-Control-Allow-Origin', allowedOrigins);
     try{
         await newUser.save();
         res.status(201).json({message : "User created successfully"});

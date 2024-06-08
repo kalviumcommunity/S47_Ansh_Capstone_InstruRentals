@@ -1,51 +1,89 @@
-/* orders.module.css */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Heebo", sans-serif;
+}
 
 .ordersContainer {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f7f7f7; /* Light gray background */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 80vh;
+  overflow-y: scroll;
+  margin: 0 auto;
+  padding: 10vh;
+  background-image: linear-gradient(180deg, rgba(0,0,0), rgba(0,0,0), rgba(0,0,0), rgba(0,0,0), rgba(0,0,0), rgba(0,0,0), rgba(0,0,0), rgba(0,0,0), rgba(0,0,0), rgba(11,11,11), rgba(16,16,16), rgba(25,25,25), rgba(27,27,27), rgba(35,35,35));
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adjusted shadow to be darker */
+  color: white; /* Default text color to white */
+}
+
+.ordersHeader {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: white; /* Header text color to white */
+}
+
+.orderList {
+  padding: 0;
+}
+
+.orderItem {
+  background-color: rgba(255, 255, 255, 0.1); /* Slight transparency to blend with black background */
+  border: 1px solid rgba(217, 217, 217, 0.3); /* Light gray border with transparency */
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.orderId {
+  font-size: 24px;
+  color: #19AEA4; /* Blue-green color for order ID */
+}
+
+.orderTotal {
+  font-weight: bold;
+  color: white; /* Total text color to white */
+}
+
+.orderItems {
+  margin-top: 10px;
+  color: #ddd; /* Light gray text color */
+}
+
+.backToHome {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #19AEA4; /* Blue-green color for link */
+}
+
+.backToHome:hover {
+  color: white; /* Change link color to white on hover */
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
   .ordersHeader {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #333; /* Dark text color */
+      font-size: 24px;
   }
-  
-  .orderList {
-    padding: 0;
-  }
-  
-  .orderItem {
-    background-color: #fff; /* White background */
-    border: 1px solid #ddd; /* Light gray border */
-    border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 20px;
-  }
-  
+
   .orderId {
-    font-size: 24px;
-    color: #007bff; /* Blue color for order ID */
+      font-size: 18px;
   }
-  
+
+  .orderItem {
+      padding: 15px;
+  }
+
   .orderTotal {
-    font-weight: bold;
-    color: #333; /* Dark text color */
+      font-size: 18px;
   }
-  
+
   .orderItems {
-    margin-top: 10px;
-    color: #666; /* Medium gray text color */
+      font-size: 16px;
   }
-  
+
   .backToHome {
-    display: inline-block;
-    margin-top: 20px;
-    text-decoration: none;
-    color: #007bff; /* Blue color for link */
+      font-size: 16px;
   }
-  
+}

@@ -229,7 +229,7 @@ const LandingPage = () => {
               </div>
               <div>
                 <label >About</label><br />
-                <textarea  cols="40" rows="10" placeholder="About"></textarea>
+                <textarea  cols="50" rows="10" placeholder="About"></textarea>
               </div>
               <button type="submit">
                 Submit
