@@ -18,14 +18,7 @@ export default function SignUp() {
     try {
       setLoading(true);
       setError(false);
-      // const res = await fetch('http://localhost:3000//api/auth/signup', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify(formData),
-      // });
-      // const data = await res.json();
+
       const data = await axios.post('http://localhost:5173/api/auth/signup',formData)
       console.log(data);
       setLoading(false);
