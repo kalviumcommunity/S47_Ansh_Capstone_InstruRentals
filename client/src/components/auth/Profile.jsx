@@ -68,14 +68,6 @@ export default function Profile() {
     e.preventDefault();
     try {
       dispatch(updateUserStart());
-      // const res = await fetch(`/api/user/update/${currentUser._id}`, {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify(formData),
-      // });
-      // const data = await res.json();
       const data = await axios.put('https://s47-ansh-capstone-instrurentals-3.onrender.com/api/user/update/' + currentUser.data._id, {...formData,id:currentUser.data._id})
       if (data.success === false) {
         dispatch(updateUserFailure(data));
