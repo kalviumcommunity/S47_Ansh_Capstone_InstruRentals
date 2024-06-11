@@ -25,10 +25,7 @@ export default function Signin() {
     e.preventDefault();
     try {
       dispatch(signInStart());
-      const data = await axios.post("https://s47-ansh-capstone-instrurentals-3.onrender.com/api/auth/signin",formData,{
-        headers:{
-          'Authorization': `Bearer ${localStorage.getItem('access_token')}`}
-      })
+      const data = await axios.post('https://s47-ansh-capstone-instrurentals-3.onrender.com/api/auth/signin',formData)
       if (data.success === false) {
         dispatch(signInFailure(data));
         return;
