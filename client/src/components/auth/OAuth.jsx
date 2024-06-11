@@ -16,17 +16,6 @@ const OAuth = () => {
             const provider = new GoogleAuthProvider()
             const auth = getAuth(app)
             const result = await signInWithPopup(auth,provider);
-            // const res = await fetch('http://localhost:3000/api/auth/google', {
-            //     method : "POST",
-            //     headers:{
-            //         "Content-Type" : "application.json"
-            //     },
-            //     body :JSON.stringify({
-            //         name : result.user.displayName,
-            //         email : result.user.email,
-            //     })
-            // })
-            // const data = await res.json();
             const data = await axios.post('https://s47-ansh-capstone-instrurentals-3.onrender.com/api/auth/google',{
                 name : result.user.displayName,
                 email : result.user.email

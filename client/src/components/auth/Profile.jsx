@@ -32,7 +32,7 @@ export default function Profile() {
   const [updateSuccess, setUpdateSuccess] = useState(false);
   const navigate = useNavigate()
   const { currentUser, loading, error } = useSelector((state) => state.user);
-  console.log(currentUser.data._id);
+  console.log(currentUser);
   useEffect(() => {
     if (image) {
       handleFileUpload(image);
