@@ -9,6 +9,7 @@ import userRoutes from './routes/user.route.js'
 import authRoutes from './routes/auth.route.js'
 import payRoutes from './routes/payment.route.js'
 import Instrument from './models/instrument.model.js';
+import generateContent from './aiservice.js';
 dotenv.config()
 app.use(express.json());
 app.use(cors())
@@ -44,6 +45,17 @@ app.use("/api/user", userRoutes);
 app.use("/api/auth",authRoutes);
 
 app.use("/api/payment",payRoutes);
+
+app.post('/ai', async (req, res) => {
+  const { prompt } = req.body;
+  try {
+    const response = await generateContent(prompt);
+    res.json({ response });
+  } catch (error) {
+    console.error('Error generating content:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
 
 
 app.use((err, req, res, next) => {
