@@ -12,12 +12,13 @@ import Products from './components/rentals/Products';
 import Cart from './components/rentals/Cart'
 import PaymentSuccess from './components/payments/PaymentSuccess';
 import Orders from './components/rentals/Orders';
+import AiForm from './components/ai/AI';
 
 function App() {
 
   return (
     <>
-      <Suspense fallback={<div>Loading...</div>}>
+      {/* <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='/signin' element={<Signin />} />
@@ -31,7 +32,8 @@ function App() {
           <Route path="/payment-success" element={<PaymentSuccess />} />
           <Route path='/orders' element={<Orders/>}></Route>
         </Routes>
-      </Suspense>
+      </Suspense> */}
+      <AiForm/>
     </>
   )
 }
