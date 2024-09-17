@@ -23,6 +23,10 @@ const NavigationBar = () => {
             navigate('/signin')
         }
     }
+
+    const handleAI = () =>{
+        navigate('/ai')
+    }
     return (
         <div className={styles.main}>
             <div className={styles.container}>
@@ -38,6 +42,10 @@ const NavigationBar = () => {
                     <div className={styles.l} onClick={handleCart}>
                         Cart
                     </div>
+                    <div className={styles.l} onClick={handleAI}>
+                        Ask AI
+                    </div>
+
                 </div>
                 {
                     !currentUser && (
