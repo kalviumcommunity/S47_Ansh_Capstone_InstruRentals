@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      {/* <Suspense fallback={<div>Loading...</div>}>
+       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='/signin' element={<Signin />} />
@@ -31,9 +31,10 @@ function App() {
           <Route path='/cart' element={<Cart/>}></Route>
           <Route path="/payment-success" element={<PaymentSuccess />} />
           <Route path='/orders' element={<Orders/>}></Route>
+          <Route path='/ai' element={<AiForm/>}></Route> 
+{/*   added the path of the ai model    */}
         </Routes>
-      </Suspense> */}
-      <AiForm/>
+      </Suspense> 
     </>
   )
 }
